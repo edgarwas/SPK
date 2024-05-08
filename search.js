@@ -5,11 +5,6 @@ var searchData = [
   "text": "Formatierungen mit Markdown Mit Markdown erstellen Sie die Artikel und k\u00F6nnen sich auf den Inhalt konzentrieren. So wird eine \u00DCberschrift z.B. so erzeugt: # \u00DCberschrift Ebene 1 Eine \u00DCberschrfit auf Ebene 2 wird so erzeugt: ## \u00DCberschrift Ebene 2 Dieser Text wird fett und dieser hier kursiv. Bilder k\u00F6nnen einfach \u00FCber die Zwischenablage oder \u00FCber die Dateiverwaltung eingef\u00FCgt werden: Bleiben Sie auf dem Bildlink und Sie erhalten eine Vorschau. Eine \u00DCbersicht \u00FCber die komplette Syntax finden Sie in der Hilfe. HTML-Code einf\u00FCgen Sie k\u00F6nnen jederzeit auch HTML-Code verwenden. Markdown und HTML k\u00F6nnen gemixt werden. "
 },
 {
-  "filename": "Upload/index.html",
-  "title": "Upload",
-  "text": "FTP-Upload Mit dem FTP-Upload laden Sie den HTML-Export nach \u0026Auml;nderungen bequem auf Ihren Webspace. Es werden nur neue und ge\u0026auml;nderte Dateien aktualisiert. Einfach den FTP-Upload starten, den Rest erledigt \u0022DA-HelpCreator\u0022 f\u0026uuml;r Sie. "
-},
-{
   "filename": "Vorschau/index.html",
   "title": "Vorschau",
   "text": "Vorschau Wechseln Sie jederzeit in die Vorschau. Die Seitenvorschau in diesem Editor erreichen Sie \u0026uuml;ber den Reiter am Ende: Mit dieser Vorschau, sehen Sie eine Voransicht der Formatierungen f\u0026uuml;r die aktuelle Seite. Vorschau der Webseite Es gibt verschiedene Vorschaufunktionen. In der Toolbar k\u0026ouml;nnen Sie die Vorschau der kompletten Seite anzeigen lassen: Damit k\u0026ouml;nnen Sie sehen, wie die komplette Projekt aussieht. "
@@ -18,6 +13,11 @@ var searchData = [
   "filename": "Vorschau/Unterordner/index.html",
   "title": "Unterordner",
   "text": "Unterordner Seiten und Ordner k\u0026ouml;nnen beliebig viele Unterordner enthalten. Erstellen Sie komplexe Webseiten. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. "
+},
+{
+  "filename": "Vorschau/Modul_Tagesabschluss/index.html",
+  "title": "Modul Tagesabschluss",
+  "text": "Modul Tagesabschluss Das Bild zeigt einen Prozessablauf f\u0026uuml;r den Aufruf des Tagesabschlusses. Es besteht aus drei Bl\u0026ouml;cken, die jeweils eine Phase des Prozesses darstellen. Der erste Block ist gr\u0026uuml;n und hei\u0026szlig;t \u0022Aufruf Tagesabschluss\u0022. Er enth\u0026auml;lt die Schritte, die notwendig sind, um den Tagesabschluss zu starten. Dazu geh\u0026ouml;ren die Auswahl des Gesch\u0026auml;ftstages, die Pr\u0026uuml;fung der offenen Posten und die Best\u0026auml;tigung des Aufrufs. Der zweite Block ist blau und hei\u0026szlig;t \u0022Verarbeitungsschritte\u0022. Er zeigt die verschiedenen Aktionen, die w\u0026auml;hrend des Tagesabschlusses durchgef\u0026uuml;hrt werden. Dazu geh\u0026ouml;ren die Verbuchung der Ums\u0026auml;tze, die Erstellung der Abrechnungen und die \u0026Uuml;bermittlung der Daten an externe Systeme. Der dritte Block ist rot und hei\u0026szlig;t \u0022Ausgabe Kontoausz\u0026uuml;ge\u0022. Er beschreibt die Ausgabe der Kontoausz\u0026uuml;ge f\u0026uuml;r die Kunden, die am Tagesabschluss beteiligt sind. Dazu geh\u0026ouml;ren die Auswahl der Ausgabeart, die Druckvorbereitung und der Versand der Kontoausz\u0026uuml;ge. "
 },
 ];
 
