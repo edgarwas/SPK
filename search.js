@@ -1,23 +1,73 @@
 var searchData = [
 {
-  "filename": "Bearbeiten/index.html",
-  "title": "Bearbeiten",
-  "text": "Formatierungen mit Markdown Mit Markdown erstellen Sie die Artikel und k\u00F6nnen sich auf den Inhalt konzentrieren. So wird eine \u00DCberschrift z.B. so erzeugt: # \u00DCberschrift Ebene 1 Eine \u00DCberschrfit auf Ebene 2 wird so erzeugt: ## \u00DCberschrift Ebene 2 Dieser Text wird fett und dieser hier kursiv. Bilder k\u00F6nnen einfach \u00FCber die Zwischenablage oder \u00FCber die Dateiverwaltung eingef\u00FCgt werden: Bleiben Sie auf dem Bildlink und Sie erhalten eine Vorschau. Eine \u00DCbersicht \u00FCber die komplette Syntax finden Sie in der Hilfe. HTML-Code einf\u00FCgen Sie k\u00F6nnen jederzeit auch HTML-Code verwenden. Markdown und HTML k\u00F6nnen gemixt werden. "
-},
-{
   "filename": "Vorschau/index.html",
   "title": "Vorschau",
-  "text": "Vorschau Wechseln Sie jederzeit in die Vorschau. Die Seitenvorschau in diesem Editor erreichen Sie \u0026uuml;ber den Reiter am Ende: Mit dieser Vorschau, sehen Sie eine Voransicht der Formatierungen f\u0026uuml;r die aktuelle Seite. Vorschau der Webseite Es gibt verschiedene Vorschaufunktionen. In der Toolbar k\u0026ouml;nnen Sie die Vorschau der kompletten Seite anzeigen lassen: Damit k\u0026ouml;nnen Sie sehen, wie die komplette Projekt aussieht. "
+  "text": " Vorschau der Webseite Links sehen Sie die Projekt\u0026uuml;bersicht. Kurzbeschreibung ausf\u0026uuml;hrliche Infos sind im Programm und den Hilfe-Dateien "
 },
 {
-  "filename": "Vorschau/Unterordner/index.html",
-  "title": "Unterordner",
-  "text": "Unterordner Seiten und Ordner k\u0026ouml;nnen beliebig viele Unterordner enthalten. Erstellen Sie komplexe Webseiten. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. "
+  "filename": "Vorschau/Einfuehrung/index.html",
+  "title": "Einf\u00FChrung",
+  "text": " Einf\u0026uuml;hrung Kurz-Beschreibung Das Programm Sparkontenverwaltung ist f\u0026uuml;r Windows-Betriebssysteme konzipiert und erm\u0026ouml;glicht die Verwaltung von Sparkonten f\u0026uuml;r mehrere Mandanten. Sie k\u0026ouml;nnen mit dem Programm Buchungen erfassen, die den jeweiligen Konten zugeordnet werden. Nach der Erfassung f\u0026uuml;hrt das Programm einen Tagesabschluss durch, in dem die Voraus-Zinsen f\u0026uuml;r die Konten berechnet werden. Das Programm bietet Ihnen eine \u0026uuml;bersichtliche und benutzerfreundliche Oberfl\u0026auml;che, mit der Sie alle Funktionen einfach und schnell ausf\u0026uuml;hren k\u0026ouml;nnen. Mit dem Programm Sparkontenverwaltung haben Sie Ihre Sparkonten immer im Blick und k\u0026ouml;nnen sie optimal verwalten. Tabelleninfos.pdf "
+},
+{
+  "filename": "Vorschau/Modul_Buchungen/index.html",
+  "title": "Modul Buchungen",
+  "text": " Modul Buchungen Link zur Beschreibung Schaubild "
 },
 {
   "filename": "Vorschau/Modul_Tagesabschluss/index.html",
   "title": "Modul Tagesabschluss",
-  "text": "Modul Tagesabschluss Das Bild zeigt einen Prozessablauf f\u0026uuml;r den Aufruf des Tagesabschlusses. Es besteht aus drei Bl\u0026ouml;cken, die jeweils eine Phase des Prozesses darstellen. Der erste Block ist gr\u0026uuml;n und hei\u0026szlig;t \u0022Aufruf Tagesabschluss\u0022. Er enth\u0026auml;lt die Schritte, die notwendig sind, um den Tagesabschluss zu starten. Dazu geh\u0026ouml;ren die Auswahl des Gesch\u0026auml;ftstages, die Pr\u0026uuml;fung der offenen Posten und die Best\u0026auml;tigung des Aufrufs. Der zweite Block ist blau und hei\u0026szlig;t \u0022Verarbeitungsschritte\u0022. Er zeigt die verschiedenen Aktionen, die w\u0026auml;hrend des Tagesabschlusses durchgef\u0026uuml;hrt werden. Dazu geh\u0026ouml;ren die Verbuchung der Ums\u0026auml;tze, die Erstellung der Abrechnungen und die \u0026Uuml;bermittlung der Daten an externe Systeme. Der dritte Block ist rot und hei\u0026szlig;t \u0022Ausgabe Kontoausz\u0026uuml;ge\u0022. Er beschreibt die Ausgabe der Kontoausz\u0026uuml;ge f\u0026uuml;r die Kunden, die am Tagesabschluss beteiligt sind. Dazu geh\u0026ouml;ren die Auswahl der Ausgabeart, die Druckvorbereitung und der Versand der Kontoausz\u0026uuml;ge. "
+  "text": " Maske Tagesabschluss Tagesab.drawio.pdf Tagesabschluss.pdf Tagesabschlusskifueber.pdf "
+},
+{
+  "filename": "Vorschau/Module_Datensicherung/index.html",
+  "title": "Module Datensicherung",
+  "text": " Modul Datensicherung "
+},
+{
+  "filename": "Vorschau/Modul_Jahresabschluss/index.html",
+  "title": "Modul Jahresabschluss",
+  "text": " Modul Jahresabschluss "
+},
+{
+  "filename": "Vorschau/Modul_Archivierung/index.html",
+  "title": "Modul Archivierung",
+  "text": " Modul Archivierung "
+},
+{
+  "filename": "Vorschau/Module_Konten/index.html",
+  "title": "Module Konten",
+  "text": " Module Konten "
+},
+{
+  "filename": "Vorschau/Modul_Inhaber/index.html",
+  "title": "Modul Inhaber",
+  "text": " Modul Inhaber "
+},
+{
+  "filename": "Vorschau/Modul_Auskunftbuch/index.html",
+  "title": "Modul Auskunftbuch",
+  "text": " Modul Auskunft Buchungen "
+},
+{
+  "filename": "Vorschau/Druckausgaben/index.html",
+  "title": "Druckausgaben",
+  "text": " Druckausgaben "
+},
+{
+  "filename": "Vorschau/Chefansicht/index.html",
+  "title": "Chefansicht",
+  "text": " Chefansicht "
+},
+{
+  "filename": "Vorschau/Sonderprogramme/index.html",
+  "title": "Sonderprogramme",
+  "text": " Sonderprogramme "
+},
+{
+  "filename": "Vorschau/Doppik_und_Fusionen/index.html",
+  "title": "Doppik und Fusionen",
+  "text": " Doppik und Fusionen "
 },
 ];
 
