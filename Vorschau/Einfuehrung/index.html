@@ -23,9 +23,9 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
+  <div class="blog-masthead">
+    <div class="container">
+      <nav class="blog-nav">
         <a class="navbar-brand" href="../../index.html">Home</a>
         
         <form class="navbar-form navbar-right" role="search">
@@ -34,38 +34,25 @@
           </div>
         </form>
         
-      </div>
-      
+        
+      </nav>
     </div>
-  </nav>
+  </div>
 
-  <div class="container-fluid">
+  <div class="container content-container">
     <div class="row">
-      <div class="col-sm-3 col-md-2 sidebar">
-        <ol class="tree">
-<li class="tree">
-<a href="../../Vorschau/index.html" class="folder">Vorschau</a>
-<ol>
-<li class="file tree"><a href = "../../Vorschau/Einfuehrung/index.html" > Einführung</a></li>
-<li class="file tree"><a href = "../../Vorschau/Modul_Buchungen/index.html" > Modul Buchungen</a></li>
-<li class="file tree"><a href = "../../Vorschau/Modul_Tagesabschluss/index.html" > Modul Tagesabschluss</a></li>
-<li class="file tree"><a href = "../../Vorschau/Module_Datensicherung/index.html" > Module Datensicherung</a></li>
-<li class="file tree"><a href = "../../Vorschau/Modul_Jahresabschluss/index.html" > Modul Jahresabschluss</a></li>
-<li class="file tree"><a href = "../../Vorschau/Modul_Archivierung/index.html" > Modul Archivierung</a></li>
-<li class="file tree"><a href = "../../Vorschau/Module_Konten/index.html" > Module Konten</a></li>
-<li class="file tree"><a href = "../../Vorschau/Modul_Inhaber/index.html" > Modul Inhaber</a></li>
-<li class="file tree"><a href = "../../Vorschau/Modul_Auskunftbuch/index.html" > Modul Auskunftbuch</a></li>
-<li class="file tree"><a href = "../../Vorschau/Druckausgaben/index.html" > Druckausgaben</a></li>
-<li class="file tree"><a href = "../../Vorschau/Chefansicht/index.html" > Chefansicht</a></li>
-<li class="file tree"><a href = "../../Vorschau/Sonderprogramme/index.html" > Sonderprogramme</a></li>
-<li class="file tree"><a href = "../../Vorschau/Doppik_und_Fusionen/index.html" > Doppik und Fusionen</a></li>
-</ol>
-</li>
-</ol>
+      <div class="col-sm-8 blog-main">
 
-      </div>
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <!--breadcrump-->
+        <div class="row">
+	<div class="col-md-12">
+		<ol class="breadcrumb">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../index.html">Vorschau</a></li>
+<li class="active">Einführung</li>
+		</ol>
+	</div>
+</div>
+
         <div id="searchResults"></div>
         <h1>
           <div role="alert" class="alert alert-success">Einf&uuml;hrung 
@@ -98,9 +85,40 @@
      </p>
      <p><a href="Tabelleninfos.pdf">Tabelleninfos.pdf</a>&nbsp; 
      </p></font>
-      </div>
-    </div>
-  </div>
+
+      </div><!-- /.blog-main -->
+
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module">
+          <ol class="tree">
+<li class="tree">
+<a href="../../Vorschau/index.html" class="folder">Vorschau</a>
+<ol>
+<li class="file tree"><a href = "../../Vorschau/Einfuehrung/index.html" > Einführung</a></li>
+<li class="file tree"><a href = "../../Vorschau/Modul_Buchungen/index.html" > Modul Buchungen</a></li>
+<li class="file tree"><a href = "../../Vorschau/Modul_Tagesabschluss/index.html" > Modul Tagesabschluss</a></li>
+<li class="file tree"><a href = "../../Vorschau/Module_Datensicherung/index.html" > Module Datensicherung</a></li>
+<li class="file tree"><a href = "../../Vorschau/Modul_Jahresabschluss/index.html" > Modul Jahresabschluss</a></li>
+<li class="file tree"><a href = "../../Vorschau/Modul_Archivierung/index.html" > Modul Archivierung</a></li>
+<li class="file tree"><a href = "../../Vorschau/Module_Konten/index.html" > Module Konten</a></li>
+<li class="file tree"><a href = "../../Vorschau/Modul_Inhaber/index.html" > Modul Inhaber</a></li>
+<li class="file tree"><a href = "../../Vorschau/Modul_Auskunftbuch/index.html" > Modul Auskunftbuch</a></li>
+<li class="file tree"><a href = "../../Vorschau/Druckausgaben/index.html" > Druckausgaben</a></li>
+<li class="file tree"><a href = "../../Vorschau/Chefansicht/index.html" > Chefansicht</a></li>
+<li class="file tree"><a href = "../../Vorschau/Sonderprogramme/index.html" > Sonderprogramme</a></li>
+<li class="file tree"><a href = "../../Vorschau/Doppik_und_Fusionen/index.html" > Doppik und Fusionen</a></li>
+</ol>
+</li>
+</ol>
+
+        </div>
+      </div><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+  <footer class="blog-footer">
+    <p>Homepage</p>
+  </footer>
 
   <script src="../../_support/js/jquery.min.js"></script>
   <script src="../../_support/js/bootstrap.min.js"></script>
