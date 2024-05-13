@@ -36,25 +36,29 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 .textstyle7 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  white-space: nowrap; }
 #container_3bf16073 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:70px; background-color:#FFFFFF;  }
 #container_3bf16073_padding { margin: 10px; display: block;  }
-.textstyle8 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
+#button_381c1eba { vertical-align: bottom; border-radius: 5px; position:relative; display: inline-block; width:150px; height:40px; background-color:#0D3974;  }
+.vcenterstyle1 { display: table; width: 100%; height: 100%; }
+.vcenterstyle2 { display: table-cell; vertical-align: middle; }
+.textstyle8 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+.textstyle9 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
 #container_59afa598 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:745px; background:none; box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.392157);  }
 #container_59afa598_padding { margin: 10px; display: block;  }
 #container_6409f847 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:656px; background:none;  }
 #container_6409f847_padding { margin: 10px; display: block;  }
-.textstyle9 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2;  }
+.textstyle10 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2;  }
 #video_479e85b6 { box-sizing: border-box; vertical-align: bottom; position:relative; display: inline-block; width:98%; height:590px; background-color:#D1D1D1; border: 1px solid #A0A0A0;  }
 #container_b7b28e3 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
 #container_b7b28e3_padding { margin: 10px; display: block;  }
 #container_74acef95 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
 #container_74acef95_padding { margin: 10px; display: block;  }
-.textstyle10 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454; font-weight:bold;  }
-.textstyle11 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454;  }
+.textstyle11 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454; font-weight:bold;  }
+.textstyle12 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454;  }
 #container_657642d1 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
 #container_657642d1_padding { margin: 10px; display: block;  }
 #container_153d0912 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
 #container_153d0912_padding { margin: 10px; display: block;  }
-.textstyle12 { font-size:28pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
-.textstyle13 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+.textstyle13 { font-size:28pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
+.textstyle14 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
 @media only screen and (max-width: 800px)
 {
 		#container_6409f847 { width:100%;  }
