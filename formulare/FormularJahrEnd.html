@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jahresendlauf</title>
+    <meta name="generator" content="EWaSoft">
+    <!--TEMPLATE:4.2-->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
+    <script>
+      $(function() {
+         $('#Kalender').datepicker({
+       prevText: '<zurück', prevStatus: '',
+        prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
+        nextText: 'weiter>', nextStatus: '',
+        nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
+        currentText: 'heute', currentStatus: '',
+        todayText: 'heute', todayStatus: '',
+        clearText: '-', clearStatus: '',
+        closeText: 'schließen', closeStatus: '',
+        monthNames: ['Januar','Februar','März','April','Mai','Juni',
+'Juli','August','September','Oktober','November','Dezember'],
+        monthNamesShort: ['Jan','Feb','Mar','Apr','Mai',
+'Jun','Jul','Aug','Sep','Okt','Nov','Dez'],
+        dayNames: ['Sonntag','Montag','Diensttag','Mittwoch','Donnerstag','Freitag','Samstag'],
+        dayNamesShort: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+        dayNamesMin: ['So','Mo','Di','Mi','Do','Fr','Sa'],
+        showMonthAfterYear: false,
+        changeMonth: true,
+        changeYear: true,   
+        yearRange: "2018:2022",   
+        dateFormat:'dd.mm.yy'
+    } 
+  );
+
+
+
+
+      });
+    </script>   
+
+<style type="text/css">
+body { background-color:#ffffff;}
+h1 { color:#2196f3; font-family:Segoe UI,Arial,sans-serif; font-size:30pt; }
+p { color:#000000; font-family:Segoe UI,Arial,sans-serif; font-size:12pt; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker-week-end,
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+
+/* icon support */
+.ui-menu-icons {
+     position: relative;
+}
+.ui-menu-icons .ui-menu-item {
+     padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: .2em;
+     margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+     left: auto;
+     right: 0;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+     font-family: Arial,Helvetica,Geneva; /*FONTCAL*/
+}
+.ui-widget .ui-widget {
+     font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+     font-family: Arial,Helvetica,Geneva; /*FONTCAL*/
+     font-size: 1em;
+}
+.ui-widget-content {
+     border: 1px solid #000000; /*BORDERCAL*/
+     background: #EEEEEE; /*BGCAL*/
+     color: #000000; /*TEXTCAL*/
+}
+
+.ui-widget-header {
+     border: 1px solid #000000;
+     background: #CCCCCC;/*BGHEADINGCAL*/
+     color: #000000;
+     font-weight: normal;
+}
+
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+     border: 1px solid #000000; /*FONTCAL*/
+     background: #B6CDE9; /*BGDAYCAL*/
+     font-weight: normal;
+     color: #000000;/*TEXTCAL*/
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+     border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+     border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+     border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+     border-bottom-right-radius: 4px;
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+     width: 16px;
+     height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_222222_256x240.png");
+}
+.ui-widget-header .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_222222_256x240.png");
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_454545_256x240.png");
+}
+.ui-state-active .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_454545_256x240.png");
+}
+
+/* positioning */
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	/*border: 1px solid #999999;*/
+	border: 1px solid #000000;
+
+	font-weight: normal;
+	color: #212121;
+}
+
+div.ui-datepicker{
+	font-family: Arial,Helvetica,Geneva;
+	font-size:10px;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .mainContainer    {
+      width: 100%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .mainContainer    {
+        width: 80%;
+        margin-left: auto; margin-right: auto;
+    }
+}
+
+.internal { display: none; }
+
+</style>
+
+<script type="text/javascript">
+function addHiddenField(formID, name, value)
+{
+	var input = document.createElement("input");
+	input.setAttribute("type", "hidden");
+	input.setAttribute(name, "name_you_want");
+	input.setAttribute(value, "value_you_want");
+	document.getElementById(formID).appendChild(input);
+}
+
+function GetCookie(cookie_name)
+{
+  if (document.cookie.length>0)
+    {
+    cookie_start=document.cookie.indexOf(cookie_name + "=");
+    if (cookie_start!=-1)
+      { 
+      cookie_start=cookie_start + cookie_name.length+1; 
+      cookie_end=document.cookie.indexOf(";",cookie_start);
+      if (cookie_end==-1) cookie_end=document.cookie.length;
+      return unescape(document.cookie.substring(cookie_start,cookie_end));
+      } 
+    }
+  return "";
+}
+
+function str_replace(search, replace, subject) {
+	return subject.split(search).join(replace);
+}
+</script>
+
+
+<!-- edeformJSBEGIN -->
+
+<!-- JSCAPTCHAREFRESH -->
+
+<script type="text/javascript">  
+
+function SetCookieValues()
+{
+
+}
+
+function SetCookies()
+{
+      
+}
+  
+</script>
+
+<script type="text/javascript">
+function chkFormular()
+{
+if(document.edeform.Bestandseq.checked  == false)
+    {
+alert("Das Auswahlfeld Bestandsliste seq vor Jahresendlauf  1 - fach muss aktiviert werden.");
+     document.edeform.Bestandseq.focus();
+     return false;
+    }
+
+if(document.edeform.Kalender.value == "")  {
+alert("Bitte einen Wert in das Feld Datum des Jahresendlaufes klicken eingeben!");
+document.edeform.Kalender.focus();
+return false;
+}
+
+if(document.edeform.Drucken.checked  == false)
+    {
+alert("Das Auswahlfeld  Sparkonten-Bestandsanlistung nach Kassengemeinschaft (vor Zinslauf) zur Versendung an KG (2-fach) muss aktiviert werden.");
+     document.edeform.Drucken.focus();
+     return false;
+    }
+if(document.edeform.P.checked  == false)
+    {
+alert("Das Auswahlfeld „Konten“ – Abfrage - Konto noch nicht gedruckt- (Anlistung noch nicht gedruckter Kto-Auszüge)  muss aktiviert werden.");
+     document.edeform.P.focus();
+     return false;
+    }
+if(document.edeform.q.checked  == false)
+    {
+alert("Das Auswahlfeld noch vorzunehmende manuelle Berichtigungen bei Zinsen oder sonstigem muss aktiviert werden.");
+     document.edeform.q.focus();
+     return false;
+    }
+if(document.edeform.ff.checked  == false)
+    {
+alert("Das Auswahlfeld  Minus-Zinsanlistung erstellen (Beispiel: Rj. 2017 Zsn < 0 ) muss aktiviert werden.");
+     document.edeform.ff.focus();
+     return false;
+    }
+if(document.edeform.sich.checked  == false)
+    {
+alert("Das Auswahlfeld  Sicherung der Sparkonten-Bestände vor Zinslauf auf USB Stick muss aktiviert werden.");
+     document.edeform.sich.focus();
+     return false;
+    }
+
+{
+	  $check = false;
+	if (document.edeform.vorgenommen.checked) $check = true;
+	if (document.edeform.vorgenommen.checked) $check = true;
+	if (document.edeform.kzinsbonus.checked) $check = true;
+	if ($check==false)
+	{
+		alert("Bitte eine Option für \"Zins und/oder Bonus Veränderungen\" auswählen.");
+		return false;
+	}
+}
+
+if(document.edeform.BackupVor.checked  == false)
+    {
+alert("Ohne Backup geht es nicht weiter");
+     document.edeform.BackupVor.focus();
+     return false;
+    }
+
+if(document.edeform.Zinskap.checked  == false)
+    {
+alert("Das Auswahlfeld Zinsen kapitalisieren muss aktiviert werden.");
+     document.edeform.Zinskap.focus();
+     return false;
+    }
+
+if(document.edeform.Zinsbuch.checked  == false)
+    {
+alert("Das Auswahlfeld Zinsen verbuchen muss aktiviert werden.");
+     document.edeform.Zinsbuch.focus();
+     return false;
+    }
+
+if(document.edeform.BJournal.checked  == false)
+    {
+alert("Das Auswahlfeld Journal drucken muss aktiviert werden.");
+     document.edeform.BJournal.focus();
+     return false;
+    }
+if(document.edeform.Start.checked  == false)
+    {
+alert("Das Auswahlfeld Starten normaler Tagesabschluss muss aktiviert werden.");
+     document.edeform.Start.focus();
+     return false;
+    }
+if(document.edeform.AufbereitenA.checked  == false)
+    {
+alert("Das Auswahlfeld Aufbereiten Auszüge muss aktiviert werden.");
+     document.edeform.AufbereitenA.focus();
+     return false;
+    }
+if(document.edeform.AuszD.checked  == false)
+    {
+alert("Das Auswahlfeld Auszüge Drucken muss aktiviert werden.");
+     document.edeform.AuszD.focus();
+     return false;
+    }
+if(document.edeform.aufk.checked  == false)
+    {
+alert("Das Auswahlfeld Aufbereiten Konten muss aktiviert werden.");
+     document.edeform.aufk.focus();
+     return false;
+    }
+if(document.edeform.aufB.checked  == false)
+    {
+alert("Das Auswahlfeld aufbereiten Buchungen muss aktiviert werden.");
+     document.edeform.aufB.focus();
+     return false;
+    }
+
+if(document.edeform.nZSeqKG.checked  == false)
+    {
+alert("Das Auswahlfeld Bestandsliste Seq nach Zinslauf 2 - fach muss aktiviert werden.");
+     document.edeform.nZSeqKG.focus();
+     return false;
+    }
+if(document.edeform.nzKG.checked  == false)
+    {
+alert("Das Auswahlfeld Bestandsliste KG  2 - fach muss aktiviert werden.");
+     document.edeform.nzKG.focus();
+     return false;
+    }
+
+if(document.edeform.USB.checked  == false)
+    {
+alert("Das Auswahlfeld Sicherung der Sparkontenbestände auf USB muss aktiviert werden.");
+     document.edeform.USB.focus();
+     return false;
+    }
+
+if(document.edeform.SPKZINSGUT.checked  == false)
+    {
+alert("Das Auswahlfeld Sparkonten-Zinsgutschriftliste sequentiell (für GKK Unterlagen, hier werden alle Zinsfortschreibungen dokumentiert. muss aktiviert werden.");
+     document.edeform.SPKZINSGUT.focus();
+     return false;
+    }
+if(document.edeform.SPKZINSBUCH.checked  == false)
+    {
+alert("Das Auswahlfeld Zinsbuchungslisten sortiert nach Kassengemeinschaft 2-fach (für GKK und KG) Zinsbuchungen mit dem Merkmal „K“ (Zinskapitalisierung) und Beträge größer Null muss aktiviert werden.");
+     document.edeform.SPKZINSBUCH.focus();
+     return false;
+    }
+if(document.edeform.SPKZINSAUS.checked  == false)
+    {
+alert("Das Auswahlfeld Zinsauszahlungsliste sortiert nach Kassengemeinschaft 2-fach (für GKK und KG, alle Zinsbuchungen mit Merkmal „A“ (Zinsauszahlung) werden dokumentiert) muss aktiviert werden.");
+     document.edeform.SPKZINSAUS.focus();
+     return false;
+    }
+if(document.edeform.SPKANAUS.checked  == false)
+    {
+alert("Das Auswahlfeld Annahme/Ausgabeanordnung nach Kassengemeinschaft und Kontoinhaber (für KG) muss aktiviert werden.");
+     document.edeform.SPKANAUS.focus();
+     return false;
+    }
+
+if(document.edeform.Kontenfort.checked  == false)
+    {
+alert("Das Auswahlfeld Konten fortschreiben aufs neue Jahr muss aktiviert werden.");
+     document.edeform.Kontenfort.focus();
+     return false;
+    }
+
+if(document.edeform.VerbSaldovor.checked  == false)
+    {
+alert("Das Auswahlfeld verbuchen Saldovorträge muss aktiviert werden.");
+     document.edeform.VerbSaldovor.focus();
+     return false;
+    }
+
+if(document.edeform.KontII.checked  == false)
+    {
+alert("Das Auswahlfeld Konten nach Saldovortrag 1 - fach muss aktiviert werden.");
+     document.edeform.KontII.focus();
+     return false;
+    }
+
+if(document.edeform.Bestseqnsaldo.checked  == false)
+    {
+alert("Das Auswahlfeld Sparkonten-Bestandsanlistung sequentiell nach Saldo-Vortrag muss aktiviert werden.");
+     document.edeform.Bestseqnsaldo.focus();
+     return false;
+    }
+
+if(document.edeform.bestkleiner.checked  == false)
+    {
+alert("Das Auswahlfeld Anlistung über gelöschte Sparkonten wg. Bestand und Zinsen = 0,00€ muss aktiviert werden.");
+     document.edeform.bestkleiner.focus();
+     return false;
+    }
+
+if(document.edeform.bestkleiner0.checked  == false)
+    {
+alert("Das Auswahlfeld Anlistung Bestand <0 muss aktiviert werden.");
+     document.edeform.bestkleiner0.focus();
+     return false;
+    }
+
+if(document.edeform.Buerz.checked  == false)
+    {
+alert("Das Auswahlfeld Buchungen für KG erzeugen  muss aktiviert werden.");
+     document.edeform.Buerz.focus();
+     return false;
+    }
+
+if(document.edeform.Buakt.checked  == false)
+    {
+alert("Das Auswahlfeld Buchungen Aktiv Passiv erzeugen muss aktiviert werden.");
+     document.edeform.Buakt.focus();
+     return false;
+    }
+
+if(document.edeform.Abgleich.checked  == false)
+    {
+alert("Das Auswahlfeld Abgleich Zeitbuch bzw. FiBu muss aktiviert werden.");
+     document.edeform.Abgleich.focus();
+     return false;
+    }
+
+if(document.edeform.Backupnach.checked  == false)
+    {
+alert("Das Auswahlfeld Backup nach Jahresendlauf muss aktiviert werden.");
+     document.edeform.Backupnach.focus();
+     return false;
+    }
+
+if(document.edeform.Bemerkung.value == "")  {
+alert("Bitte einen Wert in das Feld Bemerkung zum Endlauf eingeben!");
+document.edeform.Bemerkung.focus();
+return false;
+}
+
+	document.forms["edeform"].submit();
+	return(true);
+}
+</script>
+
+
+
+</head>
+<body onLoad="SetCookieValues();">
+  
+<div class="w3-card-12 w3-white mainContainer">
+  <!-- FORMTITLE_BEGIN -->
+  <div class="w3-container w3-sand">
+      <h1>Ablaufplan Jahresendlauf</h1>
+  </div>
+<!-- FORMTITLE_END -->
+<!-- EINLEITUNGTEXT_BEGIN -->
+  <div class="w3-container">
+      <p class="textend"><b>Kirchenverwaltung der EKHN<br></b>
+Dezernat 3 – Finanzen, Bau und Liegenschaften<br>
+Gesamtkirchenkasse <br><br>
+<b>Dokumentation der Listen und Datenausgaben des Zinslaufes 20xx in chronologischer Reihenfolge</b></p>
+  </div>
+<!-- EINLEITUNGTEXT_END -->
+
+  <form class="w3-container" method="POST" name="edeform" onSubmit="SetCookies();return chkFormular();" enctype="multipart/form-data" target="_self">
+  <input type="hidden" name="formid" value="194576">
+  <input type="hidden" name="settings" value="cXZ7ZHJrcXZ7ZHI=">
+  <input type="hidden" name="subject" value="Kontaktformular">
+  <input type="hidden" name="admin" value="cnNwdmU5YHZkZHpiY39XcHpvOXNy">
+  <input type="hidden" name="admin1" value="">
+  <input type="hidden" name="admin2" value="">
+  <input type="hidden" name="typemail" value="html">
+  <input type="hidden" name="crypt" value="1">
+  <input type="hidden" name="conf_csv" value="0">
+  <input type="hidden" name="einleittext" value="">
+  <input type="hidden" name="copyfields" value="-1">
+  <input type="hidden" name="copyip" value="-1">
+  <input type="hidden" name="hide_empty_fields" value="0">
+  <input type="hidden" name="settings_encoding" value="utf-8">  
+  <input type="hidden" name="ReturnToSender" value="0">
+   <input type="hidden" name="label__Bestandseq" value="QmVzdGFuZHNsaXN0ZSBzZXEgdm9yIEphaHJlc2VuZGxhdWYgPGI+IDEgLSBmYWNoPC9iPg==">
+   <input type="hidden" name="label__Kalender" value="RGF0dW0gZGVzIEphaHJlc2VuZGxhdWZlcyBrbGlja2Vu">
+   <input type="hidden" name="label__Prüfungen" value="UHLDvGZ1bmdlbiB2b3IgZGVtIExhdWY=">
+   <input type="hidden" name="label__Drucken" value="IFNwYXJrb250ZW4tQmVzdGFuZHNhbmxpc3R1bmcgbmFjaCBLYXNzZW5nZW1laW5zY2hhZnQgKHZvciBaaW5zbGF1ZikgenVyIFZlcnNlbmR1bmcgYW4gS0cgKDItZmFjaCk=">
+   <input type="hidden" name="label__P" value="4oCeS29udGVu4oCcIOKAkyBBYmZyYWdlIC0gS29udG8gbm9jaCBuaWNodCBnZWRydWNrdC0gKEFubGlzdHVuZyBub2NoIG5pY2h0IGdlZHJ1Y2t0ZXIgS3RvLUF1c3rDvGdlKSA=">
+   <input type="hidden" name="label__q" value="bm9jaCB2b3J6dW5laG1lbmRlIG1hbnVlbGxlIEJlcmljaHRpZ3VuZ2VuIGJlaSBaaW5zZW4gb2RlciBzb25zdGlnZW0=">
+   <input type="hidden" name="label__ff" value="IE1pbnVzLVppbnNhbmxpc3R1bmcgZXJzdGVsbGVuIChCZWlzcGllbDogUmouIDIwMTcgWnNuIDwgMCAp">
+   <input type="hidden" name="label__sich" value="IFNpY2hlcnVuZyBkZXIgU3BhcmtvbnRlbi1CZXN0w6RuZGUgdm9yIFppbnNsYXVmIGF1ZiBVU0IgU3RpY2s=">
+   <input type="hidden" name="label__ZinsBonus" value="WmlucyB1bmQvb2RlciBCb251cyBWZXLDpG5kZXJ1bmdlbg==">
+   <input type="hidden" name="label__vorgenommen" value="Wmlucw==">
+   <input type="hidden" name="label__vorgenommen" value="Qm9udXM=">
+   <input type="hidden" name="label__kzinsbonus" value="S2VpbmUgVmVyw6RuZGVydW5n">
+   <input type="hidden" name="label__BackupVor" value="PGI+RGF0ZW5zaWNoZXJ1bmcgdm9yIEphaHJlc2VuZGxhdWY8L2I+">
+   <input type="hidden" name="label__Zinskap" value="Wmluc2VuIGthcGl0YWxpc2llcmVu">
+   <input type="hidden" name="label__Zinsbuch" value="Wmluc2VuIHZlcmJ1Y2hlbg==">
+   <input type="hidden" name="label__Tagesab" value="PGI+VGFnZXNhYnNjaGx1c3M8L2I+">
+   <input type="hidden" name="label__BJournal" value="Sm91cm5hbCBkcnVja2Vu">
+   <input type="hidden" name="label__Start" value="U3RhcnRlbiBub3JtYWxlciBUYWdlc2Fic2NobHVzcw==">
+   <input type="hidden" name="label__AufbereitenA" value="QXVmYmVyZWl0ZW4gQXVzesO8Z2U=">
+   <input type="hidden" name="label__AuszD" value="QXVzesO8Z2UgRHJ1Y2tlbg==">
+   <input type="hidden" name="label__aufk" value="QXVmYmVyZWl0ZW4gS29udGVu">
+   <input type="hidden" name="label__aufB" value="YXVmYmVyZWl0ZW4gQnVjaHVuZ2Vu">
+   <input type="hidden" name="label__Bestsequkg" value="PEI+QmVzdGFuZHNsaXN0ZW4gbmFjaCBaaW5zbGF1ZjwvYj4=">
+   <input type="hidden" name="label__nZSeqKG" value="QmVzdGFuZHNsaXN0ZSBTZXEgbmFjaCBaaW5zbGF1ZjxiPiAyIC0gZmFjaDwvYj4=">
+   <input type="hidden" name="label__nzKG" value="QmVzdGFuZHNsaXN0ZSBLRyA8Yj4gMiAtIGZhY2g8L2I+">
+   <input type="hidden" name="label__USB" value="U2ljaGVydW5nIGRlciBTcGFya29udGVuYmVzdMOkbmRlIGF1ZiBVU0I=">
+   <input type="hidden" name="label__Druckprogramme" value="PGI+RHJ1Y2twcm9ncmFtbWVuIHp1bSBKYWhyZXNlbmRsYXVmPC9iPg==">
+   <input type="hidden" name="label__SPKZINSGUT" value="U3BhcmtvbnRlbi1aaW5zZ3V0c2NocmlmdGxpc3RlIHNlcXVlbnRpZWxsIChmw7xyIEdLSyBVbnRlcmxhZ2VuLCBoaWVyIHdlcmRlbiBhbGxlIFppbnNmb3J0c2NocmVpYnVuZ2VuIGRva3VtZW50aWVydC4=">
+   <input type="hidden" name="label__SPKZINSBUCH" value="Wmluc2J1Y2h1bmdzbGlzdGVuIHNvcnRpZXJ0IG5hY2ggS2Fzc2VuZ2VtZWluc2NoYWZ0IDxiPjItZmFjaDwvYj4gKGbDvHIgR0tLIHVuZCBLRykgWmluc2J1Y2h1bmdlbiBtaXQgZGVtIE1lcmttYWwg4oCeS+KAnCAoWmluc2thcGl0YWxpc2llcnVuZykgdW5kIEJldHLDpGdlIGdyw7bDn2VyIE51bGw=">
+   <input type="hidden" name="label__SPKZINSAUS" value="Wmluc2F1c3phaGx1bmdzbGlzdGUgc29ydGllcnQgbmFjaCBLYXNzZW5nZW1laW5zY2hhZnQgPGI+Mi1mYWNoPC9iPiAoZsO8ciBHS0sgdW5kIEtHLCBhbGxlIFppbnNidWNodW5nZW4gbWl0IE1lcmttYWwg4oCeQeKAnCAoWmluc2F1c3phaGx1bmcpIHdlcmRlbiBkb2t1bWVudGllcnQp">
+   <input type="hidden" name="label__SPKANAUS" value="QW5uYWhtZS9BdXNnYWJlYW5vcmRudW5nIG5hY2ggS2Fzc2VuZ2VtZWluc2NoYWZ0IHVuZCBLb250b2luaGFiZXIgKGbDvHIgS0cp">
+   <input type="hidden" name="label__Kontenfort" value="S29udGVuIGZvcnRzY2hyZWliZW4gYXVmcyBuZXVlIEphaHI=">
+   <input type="hidden" name="label__VerbSaldovor" value="dmVyYnVjaGVuIFNhbGRvdm9ydHLDpGdl">
+   <input type="hidden" name="label__KontII" value="S29udGVuIG5hY2ggU2FsZG92b3J0cmFnIDxiPjEgLSBmYWNoPC9iPg==">
+   <input type="hidden" name="label__Bestseqnsaldo" value="U3BhcmtvbnRlbi1CZXN0YW5kc2FubGlzdHVuZyBzZXF1ZW50aWVsbCBuYWNoIFNhbGRvLVZvcnRyYWc=">
+   <input type="hidden" name="label__bestkleiner" value="QW5saXN0dW5nIMO8YmVyIGdlbMO2c2NodGUgU3BhcmtvbnRlbiB3Zy4gQmVzdGFuZCB1bmQgWmluc2VuID0gMCwwMOKCrA==">
+   <input type="hidden" name="label__bestkleiner0" value="QW5saXN0dW5nIEJlc3RhbmQgPDA=">
+   <input type="hidden" name="label__Buerz" value="QnVjaHVuZ2VuIGbDvHIgS0cgZXJ6ZXVnZW4g">
+   <input type="hidden" name="label__Buakt" value="QnVjaHVuZ2VuIEFrdGl2IFBhc3NpdiBlcnpldWdlbg==">
+   <input type="hidden" name="label__Abgleich" value="QWJnbGVpY2ggWmVpdGJ1Y2ggYnp3LiBGaUJ1">
+   <input type="hidden" name="label__Backupnach" value="PGI+QmFja3VwIG5hY2ggSmFocmVzZW5kbGF1ZjwvYj4=">
+   <input type="hidden" name="label__Ausdateien" value="S29udHJvbGxlIGRlciBBdXNnYWJlZGF0ZWllbiAoc2V0enQgWnVncmlmZnNyZWNodGUgdm9yYXVzKSBkZXNoYWxiIGtlaW4gUGZsaWNodGZlbGQ=">
+   <input type="hidden" name="label__Bemerkung" value="PGI+QmVtZXJrdW5nIHp1bSBFbmRsYXVmPC9iPg==">
+   <input type="hidden" name="label__Name" value="TmFtZQ==">
+
+  
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Bestandseq" id="Bestandseq">&nbsp;<label>Bestandsliste seq vor Jahresendlauf <b> 1 - fach</b>*</label>
+</p>
+
+<p>
+<label>Datum des Jahresendlaufes klicken*</label>
+<input class="w3-input w3-white" type="text" name="Kalender" id="Kalender" value="07.12.2019">
+</p>
+
+<p>
+	<label>Prüfungen vor dem Lauf</label>
+	<div class="checkbox">
+		<label>
+			<input class="w3-check" type="checkbox" name="Drucken" value="x" class="checkbox">  Sparkonten-Bestandsanlistung nach Kassengemeinschaft (vor Zinslauf) zur Versendung an KG (2-fach)*
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="P" value="x" class="checkbox"> „Konten“ – Abfrage - Konto noch nicht gedruckt- (Anlistung noch nicht gedruckter Kto-Auszüge) *
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="q" value="x" class="checkbox"> noch vorzunehmende manuelle Berichtigungen bei Zinsen oder sonstigem*
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="ff" value="x" class="checkbox">  Minus-Zinsanlistung erstellen (Beispiel: Rj. 2017 Zsn < 0 )*
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="sich" value="x" class="checkbox">  Sicherung der Sparkonten-Bestände vor Zinslauf auf USB Stick*
+		</label>
+		<br>
+</p>
+
+<p><b><font color="red">Zins- und Bonusveränderung für das kommende Jahr vornehmen</b></font></p>
+
+<p>
+	<label>Zins und/oder Bonus Veränderungen*</label>
+	<div class="checkbox">
+		<label>
+			<input class="w3-check" type="checkbox" name="vorgenommen" value="x" class="checkbox"> Zins
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="vorgenommen" value="x" class="checkbox"> Bonus
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="kzinsbonus" value="x" class="checkbox"> Keine Veränderung
+		</label>
+		&nbsp;
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="BackupVor" id="BackupVor">&nbsp;<label><b>Datensicherung vor Jahresendlauf</b>*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Zinskap" id="Zinskap">&nbsp;<label>Zinsen kapitalisieren*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Zinsbuch" id="Zinsbuch">&nbsp;<label>Zinsen verbuchen*</label>
+<p class="w3-opacity"><b>Jetzt kommt der Tagesabschluss mit allen relevanten Punkten. Die Konten und das Journal müssen gedruckt werden.</b></p>
+</p>
+
+<p>
+	<label><b>Tagesabschluss</b></label>
+	<div class="checkbox">
+		<label>
+			<input class="w3-check" type="checkbox" name="BJournal" value="x" class="checkbox"> Journal drucken*
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="Start" value="x" class="checkbox"> Starten normaler Tagesabschluss*
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="AufbereitenA" value="x" class="checkbox"> Aufbereiten Auszüge*
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="AuszD" value="x" class="checkbox"> Auszüge Drucken*
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="aufk" value="x" class="checkbox"> Aufbereiten Konten*
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="aufB" value="x" class="checkbox"> aufbereiten Buchungen*
+		</label>
+		&nbsp;
+</p>
+
+<p>
+	<label><B>Bestandslisten nach Zinslauf</b></label>
+	<div class="checkbox">
+		<label>
+			<input class="w3-check" type="checkbox" name="nZSeqKG" value="x" class="checkbox"> Bestandsliste Seq nach Zinslauf<b> 2 - fach</b>*
+		</label>
+		&nbsp;
+		<label>
+			<input class="w3-check" type="checkbox" name="nzKG" value="x" class="checkbox"> Bestandsliste KG <b> 2 - fach</b>*
+		</label>
+		&nbsp;
+</p>
+
+<p><b>zurück zum Jahresendlauf</b>
+<font color="red">mit den nachfolgenden Punkten</font></p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="USB" id="USB">&nbsp;<label>Sicherung der Sparkontenbestände auf USB*</label>
+</p>
+
+<p>
+	<label><b>Druckprogrammen zum Jahresendlauf</b></label>
+	<div class="checkbox">
+		<label>
+			<input class="w3-check" type="checkbox" name="SPKZINSGUT" value="x" class="checkbox"> Sparkonten-Zinsgutschriftliste sequentiell (für GKK Unterlagen, hier werden alle Zinsfortschreibungen dokumentiert.*
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="SPKZINSBUCH" value="x" class="checkbox"> Zinsbuchungslisten sortiert nach Kassengemeinschaft <b>2-fach</b> (für GKK und KG) Zinsbuchungen mit dem Merkmal „K“ (Zinskapitalisierung) und Beträge größer Null*
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="SPKZINSAUS" value="x" class="checkbox"> Zinsauszahlungsliste sortiert nach Kassengemeinschaft <b>2-fach</b> (für GKK und KG, alle Zinsbuchungen mit Merkmal „A“ (Zinsauszahlung) werden dokumentiert)*
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="SPKANAUS" value="x" class="checkbox"> Annahme/Ausgabeanordnung nach Kassengemeinschaft und Kontoinhaber (für KG)*
+		</label>
+		<br>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Kontenfort" id="Kontenfort">&nbsp;<label>Konten fortschreiben aufs neue Jahr*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="VerbSaldovor" id="VerbSaldovor">&nbsp;<label>verbuchen Saldovorträge*</label>
+<p class="w3-opacity"><font color="red">wenn OK dann weiter</font></p>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="KontII" id="KontII">&nbsp;<label>Konten nach Saldovortrag <b>1 - fach</b>*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Bestseqnsaldo" id="Bestseqnsaldo">&nbsp;<label>Sparkonten-Bestandsanlistung sequentiell nach Saldo-Vortrag*</label>
+<p class="w3-opacity">Summen sind identisch mit Bestandsanlistung nach Zinslauf und MACH nach Zinslauf</p>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="bestkleiner" id="bestkleiner">&nbsp;<label>Anlistung über gelöschte Sparkonten wg. Bestand und Zinsen = 0,00€*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="bestkleiner0" id="bestkleiner0">&nbsp;<label>Anlistung Bestand <0*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Buerz" id="Buerz">&nbsp;<label>Buchungen für KG erzeugen *</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Buakt" id="Buakt">&nbsp;<label>Buchungen Aktiv Passiv erzeugen*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Abgleich" id="Abgleich">&nbsp;<label>Abgleich Zeitbuch bzw. FiBu*</label>
+</p>
+
+<p>
+<input class="w3-check" type="checkbox" value="x" name="Backupnach" id="Backupnach">&nbsp;<label><b>Backup nach Jahresendlauf</b>*</label>
+</p>
+
+<p>
+<label>Kontrolle der Ausgabedateien (setzt Zugriffsrechte voraus) deshalb kein Pflichtfeld</label><br>
+</p>
+
+<p>
+<label><b>Bemerkung zum Endlauf</b>*</label>
+<textarea class="w3-input w3-white" type="text" style="resize:none" name="Bemerkung" id="Bemerkung" placeholder="Der Jahresendlauf ist korrekt abgeschlossen" rows="3"></textarea><p class="w3-opacity">Ende Bemerkung</p>
+</p>
+
+<p>
+<label>Name</label>
+<input class="w3-input w3-white" type="text" name="Name" id="Name" value="Ellen Klaproth" maxLength="200">
+</p>
+
+
+<!-- CAPTCHA -->
+
+    <p class="textend"></p>
+  <hr/>
+
+  <p>
+ 
+    <button type="reset" class="w3-btn w3-red">Zurücksetzen</button>
+    <button class="w3-btn w3-light-grey" type="button" onClick="javascript: window.print()">Drucken</button>    
+  </p>
+</form>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+
+</script>
+
+</body>
+</html>

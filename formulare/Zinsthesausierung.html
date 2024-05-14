@@ -1,0 +1,549 @@
+/* Edgar Wassmuth */
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Import Zinsthesausierung</title>
+    <meta name="generator" content="">
+    <!--TEMPLATE:4.2-->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
+    <script>
+        $(function () {
+             $('#Durchgef').datepicker({
+       prevText: '<zurück', prevStatus: '',
+        prevJumpText: '&#x3c;&#x3c;', prevJumpStatus: '',
+        nextText: 'weiter>', nextStatus: '',
+        nextJumpText: '&#x3e;&#x3e;', nextJumpStatus: '',
+        currentText: 'heute', currentStatus: '',
+        todayText: 'heute', todayStatus: '',
+        clearText: '-', clearStatus: '',
+        closeText: 'schließen', closeStatus: '',
+        monthNames: ['January','February','March','April','May','June',
+'July','August','September','October','November','December'],
+        monthNamesShort: ['Jan','Feb','Mar','Apr','May',
+'Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+        dayNamesShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+        dayNamesMin: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+        showMonthAfterYear: false,
+        changeMonth: true,
+        changeYear: true,   
+        yearRange: "2020:2024",   
+        dateFormat:'dd.mm.yy'
+    } 
+  );
+
+
+
+
+            
+          });
+    </script>
+    
+    <style type="text/css">
+        body { background: transparent; }
+h1 { color:#2196f3; font-family:Segoe UI,Arial,sans-serif; font-size:30pt; }
+p { color:#000000; font-family:Segoe UI,Arial,sans-serif; font-size:12pt; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker-week-end,
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	color: #000000;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+
+/* icon support */
+.ui-menu-icons {
+     position: relative;
+}
+.ui-menu-icons .ui-menu-item {
+     padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: .2em;
+     margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+     left: auto;
+     right: 0;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+     font-family: Arial,Helvetica,Geneva; /*FONTCAL*/
+}
+.ui-widget .ui-widget {
+     font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+     font-family: Arial,Helvetica,Geneva; /*FONTCAL*/
+     font-size: 1em;
+}
+.ui-widget-content {
+     border: 1px solid #000000; /*BORDERCAL*/
+     background: #EEEEEE; /*BGCAL*/
+     color: #000000; /*TEXTCAL*/
+}
+
+.ui-widget-header {
+     border: 1px solid #000000;
+     background: #CCCCCC;/*BGHEADINGCAL*/
+     color: #000000;
+     font-weight: normal;
+}
+
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+     border: 1px solid #000000; /*FONTCAL*/
+     background: #B6CDE9; /*BGDAYCAL*/
+     font-weight: normal;
+     color: #000000;/*TEXTCAL*/
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+     border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+     border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+     border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+     border-bottom-right-radius: 4px;
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+     width: 16px;
+     height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_222222_256x240.png");
+}
+.ui-widget-header .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_222222_256x240.png");
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_454545_256x240.png");
+}
+.ui-state-active .ui-icon {
+     background-image: url("https://code.jquery.com/ui/1.11.2/themes/smoothness/images/ui-icons_454545_256x240.png");
+}
+
+/* positioning */
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	/*border: 1px solid #999999;*/
+	border: 1px solid #000000;
+
+	font-weight: normal;
+	color: #212121;
+}
+
+div.ui-datepicker{
+	font-family: Arial,Helvetica,Geneva;
+	font-size:10px;
+}
+
+
+        /* Landscape phones and down */
+        @media (max-width: 480px) {
+            .mainContainer
+
+        {
+            width: 100%;
+        }
+
+        }
+
+        @media (min-width: 768px) {
+            .mainContainer {
+                width: 40%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .internal {
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+      function addHiddenField(formID, name, value)
+{
+	var input = document.createElement("input");
+	input.setAttribute("type", "hidden");
+	input.setAttribute(name, "name_you_want");
+	input.setAttribute(value, "value_you_want");
+	document.getElementById(formID).appendChild(input);
+}
+
+function GetCookie(cookie_name)
+{
+  if (document.cookie.length>0)
+    {
+    cookie_start=document.cookie.indexOf(cookie_name + "=");
+    if (cookie_start!=-1)
+      { 
+      cookie_start=cookie_start + cookie_name.length+1; 
+      cookie_end=document.cookie.indexOf(";",cookie_start);
+      if (cookie_end==-1) cookie_end=document.cookie.length;
+      return unescape(document.cookie.substring(cookie_start,cookie_end));
+      } 
+    }
+  return "";
+}
+
+function str_replace(search, replace, subject) {
+	return subject.split(search).join(replace);
+}
+    </script>
+
+
+    <!-- ArchiveJSBEGIN -->
+    <!-- JSCAPTCHAREFRESH -->
+
+    <script type="text/javascript">
+
+    function SetCookieValues() {
+      
+}
+
+    function SetCookies() {
+        
+}
+
+    </script>
+
+    <script type="text/javascript">
+function chkFormular()
+{
+if(document.Archive.Backup.checked  == false)
+    {
+alert("Das Auswahlfeld Backup in Unterverzeichnis vor Umstellung FiBu muss aktiviert werden.");
+     document.Archive.Backup.focus();
+     return false;
+    }
+
+if (document.Archive.FibuEinl.selectedIndex < 1)
+{
+alert("Bitte ein Element auswählen in Jahresangabe für RJ .");
+document.Archive.FibuEinl.focus();
+return (false);
+}
+
+
+if(!document.Archive.email.value.match(/^[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i))  {
+alert("Bitte einen Wert in das Feld E-Mail  durchgeführt von: eingeben!");
+document.Archive.email.focus();
+return false;
+}
+
+	return true;
+}
+</script>
+
+
+    
+</head>
+<body onLoad="SetCookieValues();">
+  
+<div class="w3-card w3-white mainContainer">
+  <!-- FORMTITLE_BEGIN -->
+  <div class="w3-container w3-sand">
+      <h1>Importdatei Zinsthesausierung</h1>
+  </div>
+<!-- FORMTITLE_END -->
+<!-- EINLEITUNGTEXT_BEGIN -->
+  <div class="w3-container">
+      <p class="textend">Die Importdatei muss im Format <b>" .CSV" </b> Utf8 vorliegen
+Dies bedeutet das die vorhandene Excel Datei gespeichert wird unter:  CSV (Utf8) (+.csv)</p>
+  </div>
+<!-- EINLEITUNGTEXT_END -->
+
+  <form class="w3-container" action="https://app.box.com/s/4itx7iwwc6q935auvs2bqwelogu8xttm" method="POST" name="Archive" onSubmit="SetCookies();return chkFormular();" enctype="multipart/form-data" target="_self">
+  <input type="hidden" name="formid" value="266171">
+  <input type="hidden" name="settings" value="cXZ7ZHJrcXZ7ZHI=">
+  <input type="hidden" name="subject" value="Doppik">
+  <input type="hidden" name="admin" value="fnJzcHZlOWB2ZGR6YmN/V2M6eHl7fnlyOXNy">
+  <input type="hidden" name="admin1" value="">
+  <input type="hidden" name="admin2" value="">
+  <input type="hidden" name="typemail" value="html">
+  <input type="hidden" name="crypt" value="1">
+  <input type="hidden" name="conf_csv" value="0">
+  <input type="hidden" name="einleittext" value="{#Version#}">
+  <input type="hidden" name="copyfields" value="-1">
+  <input type="hidden" name="copyip" value="-1">
+  <input type="hidden" name="hide_empty_fields" value="0">
+  <input type="hidden" name="settings_encoding" value="utf-8">  
+  <input type="hidden" name="conf_pdf" value="0">    
+  <input type="hidden" name="conf_lang" value="de">
+  <input type="hidden" name="ReturnToSender" value="0">
+   <input type="hidden" name="label__Schritt 1" value="QmFja3VwIGR1cmNoZsO8aHJlbg==">
+   <input type="hidden" name="label__Backup" value="QmFja3VwIGluIFVudGVydmVyemVpY2huaXMgdm9yIFVtc3RlbGx1bmcgRmlCdQ==">
+   <input type="hidden" name="label__FibuEinl" value="SmFocmVzYW5nYWJlIGbDvHIgUko=">
+   <input type="hidden" name="label__Schritt 2" value="RHVyY2hmw7xocnVuZyBkZXIgbmFjaGZvbGdlbmRlbiBTY2hyaXR0ZQ==">
+   <input type="hidden" name="label__Auswahl" value="KExlc2VSb3V0aW5lIMO2ZmZuZW4pIEF1c3dhaGwgZGVyIEltcG9ydGRhdGVpIGltIENTViBNUy1ET1MgRm9ybWF0">
+   <input type="hidden" name="label__Zusatzname" value="ZWluZW4gc3ByZWNoZW5kZW4gWnVzYXR6bmFtZW4gdmVyZ2ViZW4gKE9iZXJ1cnNlbCB1c3cuKQ==">
+   <input type="hidden" name="label__ProgStart" value="U3RhcnQgZGVzIFByb2dyYW1tZXM=">
+   <input type="hidden" name="label__Erl" value="d2FzIHBhc3NpZXJ0">
+   <input type="hidden" name="label__Kommentar" value="S29tbWVudGFyIHp1bSBWZXJsYXVm">
+   <input type="hidden" name="label__Durchgef" value="RHVyY2hnZWbDvGhydCBhbTo=">
+   <input type="hidden" name="label__email" value="RS1NYWlsICBkdXJjaGdlZsO8aHJ0IHZvbjo=">
+
+  
+<p>
+	<label>Backup durchführen</label>
+	<div class="checkbox">
+		<label>
+			<input class="w3-check" type="checkbox" name="Backup" value="x" class="checkbox"> Backup in Unterverzeichnis vor Umstellung FiBu
+		</label>
+		<br>
+</p>
+
+<p>
+<label>Jahresangabe für RJ</label>
+<select class="w3-select w3-border w3-round-large w3-white" id="FibuEinl" name="FibuEinl">
+			<option>2020</option>
+			<option>2021</option>
+			<option>2022</option>
+			<option>2023</option>
+			<option>2024</option>
+			<option>2025</option>
+			<option>usw.</option>
+</select> 
+</p>
+
+<p><b>Die Daten werden in das ausgewählte RJ
+ geschriebenen.</b></p>
+
+<p>
+	<label>Durchführung der nachfolgenden Schritte</label>
+	<div class="checkbox">
+		<label>
+			<input class="w3-check" type="checkbox" name="Auswahl" value="x" class="checkbox"> (LeseRoutine öffnen) Auswahl der Importdatei im CSV MS-DOS Format
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="Zusatzname" value="x" class="checkbox"> einen sprechenden Zusatznamen vergeben (Oberursel usw.)
+		</label>
+		<br>
+		<label>
+			<input class="w3-check" type="checkbox" name="ProgStart" value="x" class="checkbox"> Start des Programmes
+		</label>
+		<br>
+</p>
+
+<p>
+<label>was passiert</label>
+<div><textarea class="w3-input w3-border w3-round-large w3-white" type="text" style="resize:none" name="Erl" id="Erl" value="Die Daten aus der Importdatei (wie in der Anzeige) werden in die Konten des ausgewälten Jahres geschrieben.  Bei den KontoInhabern wird das Merkmal Doppik gesetzt." rows="5">Die Daten aus der Importdatei (wie in der Anzeige) werden in die Konten des ausgewälten Jahres geschrieben.  Bei den KontoInhabern wird das Merkmal Doppik gesetzt.</textarea></div></p>
+
+<p>
+<label>Kommentar zum Verlauf</label>
+<div><textarea class="w3-input w3-border w3-round-large w3-white" type="text" style="resize:none" name="Kommentar" id="Kommentar" placeholder="alles gut" rows="5"></textarea></div></p>
+
+<p>
+<label>Durchgeführt am:</label>
+<input class="w3-input w3-border w3-round-large w3-white" type="text" name="Durchgef" id="Durchgef" value="">
+</p>
+
+
+
+
+<!-- CAPTCHA -->
+
+    <p class="textend"><b> Bitte unbedingt die 3 TXT Ausgabedateien überprüfen = Ausgabeumgesetzt.txt, Ausgabenormal.txt, Ausgabefehler.txt</b>.</P>
+  <hr/>
+
+  <p>
+ 
+    <button type="reset" class="w3-btn w3-red">Zurücksetzen</button>
+    <button class="w3-btn w3-light-grey" type="button" onClick="javascript: window.print()">Drucken</button>    
+  </p>
+</form>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+
+</script>
+
+</body>
+</html>

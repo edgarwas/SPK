@@ -1,0 +1,195 @@
+/* Edgar Wassmuth */
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="generator" content="">
+    <!--TEMPLATE:4.2-->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
+    <script>
+        $(function () {
+            
+            
+          });
+    </script>
+    
+    <style type="text/css">
+        body { background-color:#ffffff;}
+h1 { color:#2196f3; font-family:Segoe UI,Arial,sans-serif; font-size:30pt; }
+p { color:#000000; font-family:Segoe UI,Arial,sans-serif; font-size:12pt; }
+
+
+        /* Landscape phones and down */
+        @media (max-width: 480px) {
+            .mainContainer
+
+        {
+            width: 100%;
+        }
+
+        }
+
+        @media (min-width: 768px) {
+            .mainContainer {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .internal {
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+      function addHiddenField(formID, name, value)
+{
+	var input = document.createElement("input");
+	input.setAttribute("type", "hidden");
+	input.setAttribute(name, "name_you_want");
+	input.setAttribute(value, "value_you_want");
+	document.getElementById(formID).appendChild(input);
+}
+
+function GetCookie(cookie_name)
+{
+  if (document.cookie.length>0)
+    {
+    cookie_start=document.cookie.indexOf(cookie_name + "=");
+    if (cookie_start!=-1)
+      { 
+      cookie_start=cookie_start + cookie_name.length+1; 
+      cookie_end=document.cookie.indexOf(";",cookie_start);
+      if (cookie_end==-1) cookie_end=document.cookie.length;
+      return unescape(document.cookie.substring(cookie_start,cookie_end));
+      } 
+    }
+  return "";
+}
+
+function str_replace(search, replace, subject) {
+	return subject.split(search).join(replace);
+}
+    </script>
+
+
+    <!-- edeformJSBEGIN -->
+    <!-- JSCAPTCHAREFRESH -->
+
+    <script type="text/javascript">
+
+    function SetCookieValues() {
+      
+}
+
+    function SetCookies() {
+        
+}
+
+    </script>
+
+    <script type="text/javascript">
+function chkFormular()
+{
+	return true;
+}
+</script>
+
+
+    
+</head>
+
+  
+
+  <!-- FORMTITLE_BEGIN -->
+  <div class="w3-container w3-teal ">
+  
+ 
+ <h2><b>Tagesabschluss</b></h2> 
+
+  </div>
+<!-- FORMTITLE_END -->
+<!-- EINLEITUNGTEXT_BEGIN -->
+  <div class="w3-container">
+      <p class="textend">Infos zu den  Ein- und Ausgabe Dateien</p>
+  </div>
+<!-- EINLEITUNGTEXT_END -->
+
+  
+  
+<p><b> Die einzelnen Dateien</b></p>
+<font color="#005085">
+o	Datei DFUE = Festhalten wann die Daten übergeleitet wurden</br>
+o	Datei UKONTO = schreibt Textdatei Konten für FiBu</br>
+o	Datei Kifueber = schreibt Textdatei für Buchungen (siehe TabPage vorher)</br></font>
+<p><br>
+Diese Datenbanken sind im Tagesabschluss relevant</br>
+
+</Br>
+
+<Br>
+<b>Schreiben der Konten für FiBu = Textdatei:</b><br>
+<font color="#605291"><b>Procedure Kont_DFUE </b></br></font>
+<font color="#005085">
+o	liest UKONTO</br>
+o	Schreibt Textdatei für FiBu</br></font>
+<b>Bsp.: K1230111.TXT<br></b>
+SPK     202212302022123015/15/15      UKA090001002191651010    078055JNN 2022            Dreifelden-Steinen       Renov.Dreifaltigkeitski.      </br>                                 
+SPK     202212302022123015/15/15      UKA090001002191651011    068336JNN 2022            Nassau                   Stiftung Scheuern                  </br>                            
+SPK     202212302022123015/15/15      UKA090001002191651012    038088JNN 2022            Auferst. Gem. Mainz      FB Sanierung Dach         </br>                                     
+SPK     202212302022123015/15/15      UKA090001002191651015    002038JNN 2022            Alzey                    FB Rep. Steuerung Glocke       </br>                                
+SPK     202212302022123015/15/15      UKA090001002191651019    068330JNN 2022            Nassau                   Kollektenkasse Nassau             </br>                             
+SPK     202212302022123015/15/15      UKA090001002191651019    068331JNN 2022            Nassau                   Koll.-Ka. Stiftg.Scheuern              </br>                        
+</b>
+<Br>
+</br>
+<Br>
+<b>Schreiben der Buchungen für FiBu = Textdatei:</b><br>
+<font color="#008080"><b>Procedure Buch_DFUE </b></br></font>
+<font color="#005085">
+o	liest Kifueber</br>
+o	Schreibt Textdatei für FiBu</br></font>
+<b>Bsp.: B1511063.TXT<br></b>
+SPKBG ASPK     20221115151515 SPK     710001200900012022002191640000    000050                092022102500000000182590320Zinsen 2022 für 091073     RV Wetterau                                E  </br>  
+SPKBG ASPK     20221115151515 SPK     710002200900012022002191640000    000050                092022102500000000001870320Zinsen 2022 für 021080     Paul-Gerh-Gem.Ffm                          E  </br>  
+SPKBG ASPK     20221115151515 SPK     710003200900012022002191640000    000050                092022102500000000019780320Zinsen 2022 für 021081     Paul-Gerh.-Gem.Ffm.                        E  </br>  
+SPKBG ASPK     20221115151515 SPK     710004200900012022002191640000    000050                092022102500000000071270320Zinsen 2022 für 021083     Paul-Gerh.Gem.Ffm.                         E  </br>  
+</br>             
+</br>                                                   
+</b></p>
+<Br>
+<p><br>
+<!-- CAPTCHA -->
+
+</font>
+  <p>
+ 
+  
+    <button class="w3-btn w3-light-grey" type="button" onClick="javascript: window.print()">Drucken</button>    
+  </p>
+</form>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+
+</script>
+<div class="w3-card-12 w3-white mainContainer">
+  <!-- FORMTITLE_BEGIN -->
+  <div class="w3-container w3-sand">
+      <h3>Ende der Hilfe Ablauf Tages-/Jahresabschluss</h3>
+  </div>
+<!-- FORMTITLE_END -->
+
+</body>
+</html>
