@@ -36,16 +36,18 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 .textstyle4 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  white-space: nowrap; }
 .textstyle5 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  white-space: nowrap; }
 .textstyle6 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  white-space: nowrap; }
+#text_11a0051 { position:absolute; left:45%; top:34%; background:none;  }
+.textstyle7 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#004000; font-weight:bold;  }
 #container_4df4f27 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:252px; background-color:#FFFFFF; background-image: url(rc_images/notebook.jpg); background-position:bottom left; background-size:cover;  }
 #container_4df4f27_padding { margin: 10px; display: block;  }
-.textstyle7 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
-.textstyle8 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+.textstyle8 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+.textstyle9 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
 #container_1fa0001a { vertical-align: top; position:relative; display: inline-block; width:61%; min-height:72px; background-color:rgba(0, 0, 0, 0.498039);  }
 #container_1fa0001a_padding { margin: 10px; display: block;  }
-.textstyle9 { font-size:32pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  }
+.textstyle10 { font-size:32pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  }
 #container_48a00df6 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:70px; background-color:#FFFFFF;  }
 #container_48a00df6_padding { margin: 10px; display: block;  }
-.textstyle10 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
+.textstyle11 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
 #button_1171859b { vertical-align: bottom; border-radius: 5px; position:relative; display: inline-block; width:150px; height:40px; background-color:#0D3974;  }
 .vcenterstyle1 { display: table; width: 100%; height: 100%; }
 .vcenterstyle2 { display: table-cell; vertical-align: middle; }
@@ -53,12 +55,12 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 #container_5f4e7d13_padding { margin: 10px; display: block;  }
 #container_48740da6 { vertical-align: top; position:relative; display: inline-block; width:50%; min-height:150px; background:none;  }
 #container_48740da6_padding { margin: 10px; display: block;  }
-.textstyle11 { font-size:28pt; font-family:Arial, Helvetica, sans-serif; color:#525252; line-height: 1.2;  }
-.textstyle12 { font-size:16pt; font-family:Arial, Helvetica, sans-serif; color:#525252; line-height: 1.2;  }
-.textstyle13 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#525252; line-height: 1.2;  }
+.textstyle12 { font-size:28pt; font-family:Arial, Helvetica, sans-serif; color:#525252; line-height: 1.2;  }
+.textstyle13 { font-size:16pt; font-family:Arial, Helvetica, sans-serif; color:#525252; line-height: 1.2;  }
+.textstyle14 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#525252; line-height: 1.2;  }
 .ulstyle1 { margin:0; font-size: 10pt; color:#525252;  }
-.textstyle14 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#525252; font-weight:bold; line-height: 1.2;  }
-.textstyle15 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2;  }
+.textstyle15 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#525252; font-weight:bold; line-height: 1.2;  }
+.textstyle16 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2;  }
 #container_63d1f9fa { vertical-align: top; position:relative; display: inline-block; width:50%; min-height:444px; background:none;  }
 #container_63d1f9fa_padding { margin: 10px; display: block;  }
 #img_21c7f6f { vertical-align: bottom; position:relative; display: inline-block; width:98%; background:none; height:auto;  }
@@ -66,16 +68,16 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 #container_1e74c3d8_padding { margin: 10px; display: block;  }
 #container_184ec322 { vertical-align: top; position:relative; display: inline-block; width:54%; min-height:533px; background:none;  }
 #container_184ec322_padding { margin: 10px; display: block;  }
-.textstyle16 { font-size:16pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
+.textstyle17 { font-size:16pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
 #container_6df9c47b { vertical-align: top; position:relative; display: inline-block; width:97%; min-height:495px; background:none;  }
 #container_6df9c47b_padding { margin: 10px; display: block;  }
 #anchor_79d80445 { vertical-align: bottom; position:relative; display: inline-block;  }
-.textstyle17 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#000000; font-weight:bold;  }
-.textstyle18 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+.textstyle18 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#000000; font-weight:bold;  }
+.textstyle19 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
 #img_159311cd { vertical-align: bottom; position:relative; display: inline-block; width:79%; background:none; height:auto;  }
 #anchor_751b4f71 { vertical-align: bottom; position:relative; display: inline-block;  }
 #anchor_2ac74046 { vertical-align: bottom; position:relative; display: inline-block;  }
-.textstyle19 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#0080C0; font-weight:bold;  }
+.textstyle20 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#0080C0; font-weight:bold;  }
 #container_1f0e9b3 { vertical-align: top; position:relative; display: inline-block; width:46%; min-height:570px; background:none;  }
 #container_1f0e9b3_padding { margin: 10px; display: block;  }
 #img_35072fe5 { vertical-align: bottom; position:relative; display: inline-block; width:99%; background:none; height:auto;  }
@@ -83,8 +85,8 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 #container_226d4505_padding { margin: 10px; display: block;  }
 #container_40e87384 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
 #container_40e87384_padding { margin: 10px; display: block;  }
-.textstyle20 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454; font-weight:bold;  }
-.textstyle21 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454;  }
+.textstyle21 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454; font-weight:bold;  }
+.textstyle22 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#545454;  }
 #container_29f96627 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
 #container_29f96627_padding { margin: 10px; display: block;  }
 #container_23114cfc { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
