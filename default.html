@@ -9,92 +9,108 @@
 </head>
 <body>
 <div class="textstyle1">
-<div id="container_6a5612c4"><div class="textstyle1"><span class="textstyle2"><br/><br/><br/><br/><br/><br/><br/><br/><br/></span><div id="container_70954eb3"><div id="container_70954eb3_padding" ><div class="textstyle1"><span class="textstyle3">Was ist Neu</span><span class="textstyle4"><br/></span></div>
+<div id="container_6a5612c4"><div class="textstyle1"><span class="textstyle2"><br/><br/><br/><br/><br/><br/><br/><br/><br/></span><div id="container_70954eb3"><div id="container_70954eb3_padding" ><div class="textstyle1">  <span class="textstyle3">Was gibt es Neues?</span>
+</div>
 </div></div></div>
-</div><span class="textstyle5"><br/></span><div id="container_23932c22"><div id="container_23932c22_padding" ><div class="textstyle1">  <div id="menu_3dae042d">
-    <div  class="menuholder1"><a href="javascript:void(0);">
-	<div id="menuentry_30ba40bc"  class="menustyle1 menu_3dae042d_mainMenuEntry mobileEntry">
-		<div class="menuentry_text1">
-      <span class="textstyle6">Menu &#9660;</span>
-		</div>
-	</div>
-</a>
-<a href="javascript:void(0);">
-	<div id="menuentry_64f37254"  class="menustyle1 menu_3dae042d_mainMenuEntry normalEntry">
-		<div class="menuentry_text2">
-      <span class="textstyle7">Home</span>
-		</div>
-	</div>
-</a>
-<a href="javascript:void(0);">
-	<div id="menuentry_3f14847d"  class="menustyle2 menu_3dae042d_mainMenuEntry normalEntry">
-		<div class="menuentry_text3">
-		</div>
-	</div>
-</a>
-<a href="" style="text-decoration:none">
-	<div id="menuentry_567eab73"  class="menustyle3 menu_3dae042d_mainMenuEntry normalEntry">
-		<div class="menuentry_text3">
-		</div>
-	</div>
-</a>
-
-	<script type="text/javascript" src="rc_images/wsp_menu.js"></script>
-	<script type="text/javascript">
-		var js_menu_3dae042d= new wsp_menu('menu_3dae042d', 'menu_3dae042d', 10, null, true);
-
-		js_menu_3dae042d.createMenuForItem('menuentry_30ba40bc', ["      <span class=\"textstyle8\">Home</span> ", 'javascript:void(0);', '',
-		                                   "      <span class=\"textstyle8\"></span> ", 'javascript:void(0);', '',
-		                                   "      <span class=\"textstyle8\"></span> ", '', '']);
-		js_menu_3dae042d.createMenuForItem('menuentry_64f37254', []);
-		js_menu_3dae042d.createMenuForItem('menuentry_3f14847d', []);
-		js_menu_3dae042d.createMenuForItem('menuentry_567eab73', []);
-
-	</script>
+</div><span class="textstyle4"><br/></span><span class="textstyle4"><br/></span><div id="container_22e4a421"><div class="textstyle5"><div id="elem_3b62a34e"  style="vertical-align: top; position:relative; display: inline-block; width:178px; height:75px; background:none; " >  <div id="text_7b158426">
+    <div class="textstyle5">
+      <a href="javascript:opensidebarMenu();" style="text-decoration:none"><div id="button_18a61349">
+        <div class="vcenterstyle1"><div class="vcenterstyle2">          <div class="textstyle1">
+            <span class="textstyle6">&#8801; Open Sidebar</span>
+            </div>
+          <div class="textstyle5">
+            </div>
+          </div></div>
+        </div></a>
       </div>
     </div>
+</div><script>																		
+function createsidebarMenu()													
+{																				
+	var sidebar = document.getElementById("thesidebarMenu");				
+	if (!sidebar)																
+	{																			
+		sidebar = document.createElement("div");								
+		sidebar.id = "thesidebarMenu";										
+		sidebar.style.cssText = 'height: 100%; max-width:100vw; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #2f2f2f; overflow-x: hidden; transition: 0.5s; padding-top: 50px;';				
+																				
+		// close button															
+		var closebtn = document.createElement("a");							
+		closebtn.href = 'javascript:void(0)';									
+		closebtn.onclick = closesidebarMenu;									
+		closebtn.style.cssText = 'position: absolute; top: 0; right: 16px; font-size: 35px; color: #838383; text-decoration: none;';										
+		closebtn.textContent = '×'; // × or × or &times;					
+		sidebar.appendChild(closebtn);											
+																				
+		// add links															
+			var aelem = document.createElement("a");					
+			aelem.textContent = "Home";
+			aelem.href = 'index.html';							
+			aelem.style.cssText = 'padding: 8px 8px 8px 32px; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 25px; color: #838383; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "Sonderprogramme";
+			aelem.href = 'Sonderprogramme.html';							
+			aelem.style.cssText = 'padding: 8px 8px 8px 32px; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 25px; color: #838383; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "Wiki";
+			aelem.href = 'Homepage_u_Wiki.html';							
+			aelem.style.cssText = 'padding: 8px 8px 8px 32px; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 25px; color: #838383; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "Projektseite";
+			aelem.href = 'https://edgarwas.github.io/SPK/';							
+			aelem.style.cssText = 'padding: 8px 8px 8px 32px; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 25px; color: #838383; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);									
+																					
+		document.body.appendChild(sidebar);											
+	}																				
+}																					
+																					
+createsidebarMenu();																
+																					
+																					
+function opensidebarMenu() 														
+{																					
+	var sidebarWidth = "260px";									
+																					
+	var sidebar = document.getElementById("thesidebarMenu");						
+	sidebar.style.width = sidebarWidth;												
+  																					
+	// set margin of all top containers to width									
+																					
+	for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+		{																			
+			child.style.transition = "margin-left .5s";							
+			child.style.marginLeft = sidebarWidth;									
+		} 																			
+}																					
+																					
+function closesidebarMenu() 														
+{																					
+  document.getElementById("thesidebarMenu").style.width = "0";					
+  																					
+  // set margin of all top containers back											
+																					
+	for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+			child.style.marginLeft = "0";											
+}																					
+</script>																			
 </div>
-<div style="clear:both"></div></div></div><span class="textstyle5"><br/></span><div id="container_22e4a421"><div class="textstyle1"><div id="container_4df4f27"><div id="container_4df4f27_padding" ><div class="textstyle9"><span class="textstyle10"><br/><br/></span><span class="textstyle10">See for example this nice placholder text: Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/></span></div>
-<div class="textstyle1"><span class="textstyle10"><br/> </span>  <a href="" style="text-decoration:none"><div id="button_1fa0001a">
-    <div class="vcenterstyle1"><div class="vcenterstyle2">      <div class="textstyle1">
-        <span class="textstyle11">About us</span>
-        </div>
-      <div class="textstyle9">
-        </div>
-      </div></div>
-    </div></a>
-  <span class="textstyle2"> </span>
-  <a href="" style="text-decoration:none"><div id="button_7b672672">
-    <div class="vcenterstyle1"><div class="vcenterstyle2">      <div class="textstyle1">
-        <span class="textstyle11">Contact</span>
-        </div>
-      <div class="textstyle9">
-        </div>
-      </div></div>
-    </div></a>
+<div class="textstyle1"><div id="container_4df4f27"><div id="container_4df4f27_padding" ><div class="textstyle5"><span class="textstyle7"><br/><br/></span><span class="textstyle8">Hier sehen Sie die neuesten &#196;nderungen im Programm.</span><span class="textstyle7"><br/></span></div>
+<div class="textstyle1"><span class="textstyle7"><br/> </span>  <span class="textstyle2"> </span>
 </div>
-<div class="textstyle9">  <span class="textstyle12"><br/><br/></span>
+<div class="textstyle5">  <span class="textstyle9"><br/><br/></span>
 </div>
-<div style="clear:both"></div></div></div></div>
-</div><span class="textstyle5"><br/></span><div id="container_358e6472"><div class="textstyle1"><span class="textstyle10"><br/><br/></span><div id="container_638ba834"><div id="container_638ba834_padding" ><div class="textstyle1"><div id="container_1364a63e"><div id="container_1364a63e_padding" ><div class="textstyle9"><span class="textstyle13">&#9018;</span><span class="textstyle14"><br/></span><span class="textstyle15">Best Design</span><span class="textstyle16"><br/><br/>Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span></div>
-</div></div><div id="container_478afb3"><div id="container_478afb3_padding" ><div class="textstyle9"><span class="textstyle13">&#9000;</span><span class="textstyle14"><br/></span><span class="textstyle15">Engineering</span><span class="textstyle16"><br/><br/>Dolor </span>  <span class="textstyle16">in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut aliquip ex ea commodo consequat. </span>
-</div>
-</div></div><div id="container_4ae1bf1e"><div id="container_4ae1bf1e_padding" ><div class="textstyle9"><span class="textstyle13">&#9850;</span><span class="textstyle14"><br/></span><span class="textstyle15">Analysis</span><span class="textstyle16"><br/><br/>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut aliquip ex ea commodo consequat. Duis aute irure. </span></div>
 </div></div></div>
-<div style="clear:both"></div></div></div><span class="textstyle10"><br/></span><span class="textstyle17"><br/><br/></span></div>
-</div><span class="textstyle5"><br/></span><div id="container_6aa538fc"><div class="textstyle1"><span class="textstyle10"><br/><br/></span><div id="container_66ca5416"><div id="container_66ca5416_padding" ><div class="textstyle9"><span class="textstyle10"><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/></span></div>
-<div class="textstyle1"><span class="textstyle10">Call us any time:<br/></span><span class="textstyle17">+99 1234 5678 90123<br/></span>  <a href="tel:+99 1234 5678 90123" style="text-decoration:none"><div id="button_3ce31f95">
-    <div class="vcenterstyle1"><div class="vcenterstyle2">      <div class="textstyle1">
-        <span class="textstyle11">Call now</span>
-        </div>
-      <div class="textstyle9">
-        </div>
-      </div></div>
-    </div></a>
+<div class="textstyle5"><a href="https://edgarwas.github.io/SPK/" style="text-decoration:none"><div id="button_26caea54"><div class="vcenterstyle1"><div class="vcenterstyle2"><div class="textstyle1">  <span class="textstyle6">zur&#252;ck</span>
 </div>
-<div class="textstyle9">  <span class="textstyle17"><br/><br/></span>
-</div>
-<div style="clear:both"></div></div></div><span class="textstyle10"><br/></span><span class="textstyle17"><br/></span></div>
-</div><span class="textstyle18"><br/></span>  </div>
+<div class="textstyle5"></div>
+</div></div></div></a></div>
+</div><span class="textstyle4"><br/></span><div id="container_358e6472"><div class="textstyle1"><span class="textstyle7"><br/><br/></span><span class="textstyle7"><br/></span><span class="textstyle10"><br/><br/></span></div>
+</div><span class="textstyle4"><br/></span><span class="textstyle11"><br/></span>  </div>
 </body>
 </html>
