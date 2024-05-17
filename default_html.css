@@ -17,7 +17,7 @@ body { background-color:#F0EEEA; padding:0;  margin: 0; }
 #container_70954eb3_padding { margin: 30px 10px 0px 10px;display: block;  }
 .textstyle3 { font-size:28pt; font-family:Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', sans-serif-condensed, sans-serif; color:#5A56B2; line-height: 1.5;  }
 .textstyle4 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
-#container_22e4a421 { vertical-align: top; position:relative; display: inline-block; width:89%; min-height:271px; max-width:1024px; background-color:#D9D9D9;  }
+#container_22e4a421 { vertical-align: top; position:relative; display: inline-block; width:89%; min-height:607px; max-width:1024px; background-color:#D9D9D9;  }
 .textstyle5 { text-align:left; }
 #text_7b158426 { position:absolute; left:0%; top:0%; width:100%; height:100%; background:none;  }
 .vcenterstyle1 { display: table; width: 100%; height: 100%; }
@@ -29,6 +29,4 @@ body { background-color:#F0EEEA; padding:0;  margin: 0; }
 .textstyle8 { font-size:16pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#000000; font-style:italic; font-weight:bold; line-height: 1.5;  }
 .textstyle9 { font-size:16pt; font-family:'Palatino Linotype', 'Book Antiqua3', Palatino, serif; color:#000000; line-height: 1.5;  }
 #button_26caea54 { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:40px; background-color:#5A4ABC; background: linear-gradient(to bottom,#5A4ABC, #282154 50%, #1F1941 50%, #16122F); border: 2px solid #2F2759;  }
-#container_358e6472 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:70px; max-width:1024px; background-color:#ECE9E4;  }
-.textstyle10 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#000000; font-weight:bold; line-height: 1.5;  }
-.textstyle11 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+.textstyle10 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
