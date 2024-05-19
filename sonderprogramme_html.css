@@ -2,28 +2,31 @@ a { color:#5D5D9E; }
 a:visited { color:#5D5D9E; } 
 a:active { color:#5C615E; } 
 a:hover { color:#B2B3B4; } 
-body { background-color:#F0EEEA; padding:0;  margin: 0; }
+		a.wsp113dc287{ color:#386BA3; text-decoration: none} 
+		a.wsp113dc287:visited{ color:#0000A0; text-decoration: none} 
+		a.wsp113dc287:active{ color:#0000A0; text-decoration: none} 
+		a.wsp113dc287:hover{ color:#6C8AAA; text-decoration: none} 
+body { background-color:#FFFFFF; padding:0;  margin: 0; }
 .textstyle1 { text-align:center; }
-#container_7a349e57 { vertical-align: top; position:relative; display: inline-block; width:89%; min-height:207px; max-width:1024px; background-color:#FFFFFF; background-image: url(rc_images/planning.jpg); background-position:center center; background-size:cover;  }
+#container_36dfdcf0 { vertical-align: top; position:relative; display: inline-block; width:89%; min-height:207px; max-width:1024px; background-color:#FFFFFF; background-image: url(rc_images/planning.jpg); background-position:center center; background-size:cover;  }
 .textstyle2 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#000000;  }
-#container_39a987f9 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:25px; background-color:rgba(217, 217, 217, 0.898039);  }
-#container_39a987f9_padding { margin: 30px 10px 0px 10px;display: block;  }
-.textstyle3 { font-size:28pt; font-family:Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', sans-serif-condensed, sans-serif; color:#5A56B2; line-height: 1.5;  }
-.textstyle4 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
-#container_5acfb01a { vertical-align: top; position:relative; display: inline-block; width:89%; min-height:271px; max-width:1024px; background-color:#D9D9D9;  }
-#container_27de8c33 { vertical-align: top; border-radius: 15px; position:relative; display: inline-block; width:78%; min-height:1131px; max-width:800px; background-color:#ECE9E4;  }
-#container_27de8c33_padding { margin: 10px; display: block;  }
-#img_3eca7aab { vertical-align: bottom; position:relative; display: inline-block; width:50%; background:none; height:auto;  }
-.textstyle5 { text-align:left; }
-.textstyle6 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#000000; line-height: 1.5;  }
-.textstyle7 { font-size:14pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#000000; font-weight:bold; line-height: 1.5;  }
-#img_170f5b97 { vertical-align: bottom; position:relative; display: inline-block; width:101%; background:none; height:auto;  }
-#img_7546577e { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none; height:auto;  }
-#img_31d6b3e8 { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none; height:auto;  }
-#img_22bff3a2 { vertical-align: bottom; position:relative; display: inline-block; width:99%; background:none; height:auto;  }
-#button_5c44c45e { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:40px; background-color:#5A4ABC; background: linear-gradient(to bottom,#5A4ABC, #282154 50%, #1F1941 50%, #16122F); border: 2px solid #2F2759;  }
+#container_113dcc9 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:25px; background-color:rgba(217, 217, 217, 0.898039);  }
+#container_113dcc9_padding { margin: 30px 10px 0px 10px;display: block;  }
+#button_5aa352a9 { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:40px; background-color:#5A4ABC; background: linear-gradient(to bottom,#5A4ABC, #282154 50%, #1F1941 50%, #16122F); border: 2px solid #2F2759;  }
 .vcenterstyle1 { display: table; width: 100%; height: 100%; }
 .vcenterstyle2 { display: table-cell; vertical-align: middle; }
-.textstyle8 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
-.textstyle9 { font-size:16pt; font-family:'Palatino Linotype', 'Book Antiqua3', Palatino, serif; color:#000000; line-height: 1.5;  }
-.textstyle10 { font-size:10pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+.textstyle3 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+.textstyle4 { text-align:left; }
+.textstyle5 { font-size:28pt; font-family:Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', sans-serif-condensed, sans-serif; color:#5A56B2; line-height: 1.5;  }
+.textstyle6 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+#container_411407b2 { vertical-align: top; position:relative; display: inline-block; width:89%; min-height:902px; max-width:1024px; background-color:#D9D9D9;  }
+#container_6425cbf8 { vertical-align: top; border-radius: 15px; position:relative; display: inline-block; width:78%; min-height:891px; max-width:800px; background-color:#ECE9E4;  }
+#container_6425cbf8_padding { margin: 10px; display: block;  }
+#img_48626ed5 { vertical-align: bottom; position:relative; display: inline-block; width:50%; background:none; height:auto;  }
+.textstyle7 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#000000; line-height: 1.5;  }
+.textstyle8 { font-size:14pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#000000; font-weight:bold; line-height: 1.5;  }
+#img_1a231c6b { vertical-align: bottom; position:relative; display: inline-block; width:101%; background:none; height:auto;  }
+#img_50fd05f0 { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none; height:auto;  }
+#img_509680c { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none; height:auto;  }
+#img_6e69ea9c { vertical-align: bottom; position:relative; display: inline-block; width:99%; background:none; height:auto;  }
+#button_30d04987 { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:40px; background-color:#5A4ABC; background: linear-gradient(to bottom,#5A4ABC, #282154 50%, #1F1941 50%, #16122F); border: 2px solid #2F2759;  }
