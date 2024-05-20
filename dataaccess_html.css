@@ -6,15 +6,18 @@ a:hover { color:#B2B3B4; }
 		a.wsp113dc287:visited{ color:#0000A0; text-decoration: none} 
 		a.wsp113dc287:active{ color:#0000A0; text-decoration: none} 
 		a.wsp113dc287:hover{ color:#6C8AAA; text-decoration: none} 
+#button_6469f983 { vertical-align: bottom; border-radius: 5px; position:relative; display: inline-block; margin:10px 10px 0px 0px;width:150px; height:40px; background-color:#BC9770; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.27451);  }
+#button_6469f983:hover { background-color:#8F683E;  }
+#button_6469f983:hover span { color:#CDCDCD; }
 body { background-color:#FFFFFF; padding:0;  margin: 0; }
-.textstyle1 { text-align:left; }
-#button_55c6bb89 { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:40px; background-color:#A9A9BC; background: linear-gradient(to bottom,#A9A9BC, #4C4C54 50%, #3B3B41 50%, #2A2A2F); border: 2px solid #595959;  }
+.textstyle1 { text-align:center; }
 .vcenterstyle1 { display: table; width: 100%; height: 100%; }
 .vcenterstyle2 { display: table-cell; vertical-align: middle; }
-.textstyle2 { text-align:center; }
-.textstyle3 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+.textstyle2 { text-align:left; }
+.textstyle3 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#FFFFFF;  }
 .textstyle4 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
 #container_58be145d { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:666px; background:none;  }
 #container_58be145d_padding { margin: 10px; display: block;  }
 #iframe_689c9698 { box-sizing: border-box; vertical-align: bottom; position:relative; display: inline-block; width:100%; height:875px; background:none; border: 1px solid #A0A0A0;  }
 #button_f1669e6 { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:40px; background-color:#A9A9BC; background: linear-gradient(to bottom,#A9A9BC, #4C4C54 50%, #3B3B41 50%, #2A2A2F); border: 2px solid #595959;  }
+.textstyle5 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }

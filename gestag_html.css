@@ -17,6 +17,9 @@ a:hover { color:#B2B3B4; }
 		.menu_6f510895_mainMenuEntry:hover span {	color:#FFFFFF !important; }
 		#menu_6f510895 .mobileEntry { display: none; } 
 		#menu_6f510895 .normalEntry { display: block; } 
+#button_37db15c9 { vertical-align: bottom; border-radius: 5px; position:relative; display: inline-block; margin:10px 10px 0px 0px;width:150px; height:40px; background-color:#BC9770; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.27451);  }
+#button_37db15c9:hover { background-color:#8F683E;  }
+#button_37db15c9:hover span { color:#CDCDCD; }
 #button_50c906c2 { vertical-align: bottom; border-radius: 20px; position:relative; display: inline-block; width:150px; height:40px; background-color:#FFFFFF;  }
 #button_50c906c2:hover { background-color:#DFDFDF;  }
 #button_50c906c2:hover span { color:#000000; }
@@ -36,10 +39,9 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 .textstyle4 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  white-space: nowrap; }
 #text_4c287355 { position:absolute; left:45%; top:34%; background:none;  }
 .textstyle5 { font-size:14pt; font-family:Arial, Helvetica, sans-serif; color:#004000; font-weight:bold;  }
-#button_6a7f7eaa { vertical-align: bottom; border-radius: 5px; position:relative; display: inline-block; width:150px; height:40px; background-color:#0D3974;  }
 .vcenterstyle1 { display: table; width: 100%; height: 100%; }
 .vcenterstyle2 { display: table-cell; vertical-align: middle; }
-.textstyle6 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+.textstyle6 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#FFFFFF;  }
 .textstyle7 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#1F1F1F; line-height: 1.2; text-shadow: 2px 2px 2px #C0C0C0;  }
 #container_66a77ee4 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:837px; background:none; box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.392157);  }
 #container_66a77ee4_padding { margin: 10px; display: block;  }

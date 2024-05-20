@@ -6,6 +6,9 @@ a:hover { color:#B2B3B4; }
 		a.wsp113dc287:visited{ color:#0000A0; text-decoration: none} 
 		a.wsp113dc287:active{ color:#0000A0; text-decoration: none} 
 		a.wsp113dc287:hover{ color:#6C8AAA; text-decoration: none} 
+#button_2486faf1 { vertical-align: bottom; border-radius: 5px; position:relative; display: inline-block; margin:10px 10px 0px 0px;width:150px; height:40px; background-color:#BC9770; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.27451);  }
+#button_2486faf1:hover { background-color:#8F683E;  }
+#button_2486faf1:hover span { color:#CDCDCD; }
 body { background-color:#FFFFFF; padding:0;  margin: 0; }
 .textstyle1 { text-align:center; }
 #container_36dfdcf0 { vertical-align: top; position:relative; display: inline-block; width:89%; min-height:207px; max-width:1024px; background-color:#FFFFFF; background-image: url(rc_images/planning.jpg); background-position:center center; background-size:cover;  }
@@ -29,4 +32,4 @@ body { background-color:#FFFFFF; padding:0;  margin: 0; }
 #img_50fd05f0 { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none; height:auto;  }
 #img_509680c { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none; height:auto;  }
 #img_6e69ea9c { vertical-align: bottom; position:relative; display: inline-block; width:99%; background:none; height:auto;  }
-#button_30d04987 { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:40px; background-color:#5A4ABC; background: linear-gradient(to bottom,#5A4ABC, #282154 50%, #1F1941 50%, #16122F); border: 2px solid #2F2759;  }
+.textstyle9 { font-size:12pt; font-family:Segoe, 'Segoe UI', 'Helvetica Neue', sans-serif; color:#FFFFFF;  }
