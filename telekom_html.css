@@ -53,9 +53,6 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 #container_7133bc3d { vertical-align: top; position:relative; display: inline-block; width:20%; min-height:150px; background-color:#808080;  }
 #container_7133bc3d_padding { margin: 10px; display: block;  }
 #button_d75b7d1 { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:65px; background-color:#A9A9BC; background: linear-gradient(to bottom,#A9A9BC, #4C4C54 50%, #3B3B41 50%, #2A2A2F); border: 2px solid #595959;  }
-#container_1669005b { vertical-align: top; position:relative; display: inline-block; width:20%; min-height:150px; background-color:#004000;  }
-#container_1669005b_padding { margin: 10px; display: block;  }
-#button_6f87498c { box-sizing: border-box; vertical-align: bottom; border-radius: 9px; position:relative; display: inline-block; width:150px; height:65px; background-color:#A9A9BC; background: linear-gradient(to bottom,#A9A9BC, #4C4C54 50%, #3B3B41 50%, #2A2A2F); border: 2px solid #595959;  }
 #container_54d940e3 { vertical-align: top; position:relative; display: inline-block; width:20%; min-height:150px; background:none;  }
 #container_54d940e3_padding { margin: 10px; display: block;  }
 #container_70c663b5 { vertical-align: top; position:relative; display: inline-block; width:20%; min-height:150px; background:none;  }
@@ -78,7 +75,6 @@ body { background-color:#F1F1F1; padding:0;  margin: 0; }
 {
 		#container_45953828 { width:100%;  }
 		#container_7133bc3d { width:100%;  }
-		#container_1669005b { width:100%;  }
 		#container_54d940e3 { width:100%;  }
 		#container_70c663b5 { width:100%;  }
 }
