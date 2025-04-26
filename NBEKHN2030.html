@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Betreuer  Edgar Waßmuth</title>
+    </head>
+
+    <h1>EKHN2030 im Bereich Sparkontenverwaltung:
+    </h1>
+    <p>Umstellung KG's auf Nachbarschaftsräume innerhalb der Sparkontenverwaltung.
+    </p>
+    <h2>Vorläufiger Zeitplan. Wird nach dem Anfang in einem Projektplan festgeschrieben.
+    </h2>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['timeline']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var container = document.getElementById('timeline-tooltip');
+          var chart = new google.visualization.Timeline(container);
+          var dataTable = new google.visualization.DataTable();
+
+          dataTable.addColumn({ type: 'string', id: 'EKHN2030' });
+          dataTable.addColumn({ type: 'string', id: 'dummy bar label' });
+          dataTable.addColumn({ type: 'string', role: 'tooltip' });
+          dataTable.addColumn({ type: 'date', id: 'Start' });
+          dataTable.addColumn({ type: 'date', id: 'End' });
+          dataTable.addRows([
+            [ 'EKHN2030', null, 'Projekt EKHN2030', new Date(2023, 1, 1), new Date(2025, 12, 31) ],
+            [ 'Nachbarschaftsräume', null, 'Vorlauf', new Date(2023, 1, 1),  new Date(2024, 12, 31) ],
+            [ '1. Zoom Meeting', null, 'Ellen, Edgar, Alex', new Date(2024, 6, 18),  new Date(2024, 6, 18) ],
+            [ 'Datensammlung', null, 'Ellen, Edgar, Alex', new Date(2024, 6, 20),  new Date(2024, 6, 30) ],
+            [ '2. Zoom Meeting', null, 'Ellen, Edgar, Alex', new Date(2024, 7, 3),  new Date(2024, 7, 3) ],
+            [ 'Projekt-Planung', null, 'Ellen, Edgar, Alex', new Date(2024, 7, 8),  new Date(2024, 7, 18) ],
+            [ '3. Zoom Meeting', null, 'Ellen, Edgar, Alex', new Date(2024, 7, 25),  new Date(2024, 7, 25) ],
+            [ 'Entwicklung', null, 'Edgar', new Date(2024, 7, 24),  new Date(2024, 8, 30) ],
+            [ 'Testläufe', null, 'Edgar', new Date(2024, 9, 20),  new Date(2024, 10, 10) ],
+            [ '4. Zoom Meeting', null, 'Ellen, Edgar, Alex', new Date(2024, 10, 12),  new Date(2024, 10, 12) ],
+            [ 'Produktion', null, 'KG0010 und KG0011', new Date(2024, 12, 1),  new Date(2025, 1, 1) ]]);
+
+          chart.draw(dataTable);
+        }
+    </script>
+
+</head>
+<body>
+
+<div id="timeline-tooltip" style="height: 580px;"></div>
+</body>
+
+<b><h3>On Ton KI <br></h3>
+
+    Die Nachbarschaftsräume sind darauf ausgerichtet, multiprofessionelle Teams zu bilden,<br>
+    die Verwaltung zu zentralisieren und neue Gebäudekonzepte zu entwickeln.<br>
+    Diese Teams setzen sich aus verschiedenen Fachleuten zusammen, die gemeinsam daran arbeiten, die kirchliche Arbeit effektiv und sinnvoll zu gestalten.<br>
+    Die Teams fördern auch Synergieeffekte und unterstützen einander in ihren professionellen Unterschieden.<br>
+    Für weitere Informationen über EKHN2030 und die Nachbarschaftsräume können Sie die offizielle Website der EKHN besuchen.<br>
+    Diese Liste ist nicht abschließend, aber sie gibt einen Überblick über die Art von Fragen, die bei einer Gemeindefusion im Bereich der Finanzbuchhaltung auftreten können.<br>
+    Für eine detaillierte Beratung und Unterstützung können spezialisierte Berater oder die zuständigen Behörden herangezogen werden.<br>
+    Informationen zum geplanten Projekt der Schaffung von Nachbarschaftsräumen, die die traditionellen<br>
+    Kassengemeinschaften als direkte Ansprechpartner ersetzen sollen.<br>
+</b>
+</html>
